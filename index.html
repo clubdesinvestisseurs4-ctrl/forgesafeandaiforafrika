@@ -1,0 +1,416 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ForgeSafe &amp; AI for Africa — Systèmes de gestion, Cybersécurité, Consultance digitale</title>
+<meta name="description" content="ForgeSafe & AI for Africa accompagne les entreprises africaines avec des systèmes de gestion d'activités, des audits de cybersécurité et de la consultance digitale sur mesure.">
+<meta property="og:title" content="ForgeSafe & AI for Africa">
+<meta property="og:description" content="Systèmes de gestion, audit de cybersécurité et consultance digitale pour les entreprises africaines.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="assets/images/logo-full.png">
+<link rel="icon" type="image/png" href="assets/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/favicon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="noise-overlay" aria-hidden="true"></div>
+<div class="progress-bar" id="progressBar" aria-hidden="true"></div>
+<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="header">
+  <div class="container header-inner">
+    <a href="#top" class="brand">
+      <span class="brand-mark">
+        <img src="assets/images/logo-icon.png" alt="ForgeSafe & AI for Africa" width="39" height="32">
+      </span>
+      <span class="brand-text">ForgeSafe<span class="brand-accent">&amp;AI</span><span class="brand-sub">for Africa</span></span>
+    </a>
+
+    <nav class="main-nav" id="main-nav">
+      <a href="#services" data-nav>Services</a>
+      <a href="#demos" data-nav>Démonstrations</a>
+      <a href="#apropos" data-nav>À propos</a>
+      <a href="#equipe" data-nav>Équipe</a>
+      <a href="#contact" data-nav>Contact</a>
+    </nav>
+
+    <a href="#contact" class="btn btn-primary btn-sm nav-cta magnetic"><span>Discutons de votre projet</span></a>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-bg" aria-hidden="true">
+      <div class="grid-lines" id="gridLines"></div>
+      <svg class="circuit" viewBox="0 0 1200 800" preserveAspectRatio="none">
+        <path class="circuit-path" d="M0 120 H260 V280 H520 V90 H820 V340" />
+        <path class="circuit-path circuit-path-2" d="M1200 640 H940 V420 H700 V700 H360" />
+        <circle class="circuit-node" cx="260" cy="120" r="4"/>
+        <circle class="circuit-node" cx="520" cy="280" r="4"/>
+        <circle class="circuit-node" cx="820" cy="90" r="4"/>
+        <circle class="circuit-node" cx="940" cy="640" r="4"/>
+        <circle class="circuit-node" cx="700" cy="420" r="4"/>
+      </svg>
+      <div class="glow glow-1"></div>
+      <div class="glow glow-2"></div>
+    </div>
+
+    <div class="container hero-inner">
+      <p class="eyebrow reveal"><span class="eyebrow-prompt">&gt;</span> gestion &middot; cybersécurité &middot; ia &middot; consultance<span class="eyebrow-cursor">_</span></p>
+      <h1 class="hero-title">
+        <span class="line"><span class="line-inner reveal-line">Nous bâtissons les systèmes</span></span>
+        <span class="line"><span class="line-inner reveal-line">numériques qui font avancer</span></span>
+        <span class="line"><span class="line-inner reveal-line"><span class="text-gradient">l'Afrique.</span></span></span>
+      </h1>
+      <p class="hero-lead reveal">
+        ForgeSafe &amp; AI for Africa conçoit des outils de gestion sur mesure, sécurise vos infrastructures
+        et accompagne votre transformation digitale &mdash; de l'idée au déploiement.
+      </p>
+      <div class="hero-actions reveal">
+        <a href="#demos" class="btn btn-primary magnetic"><span>Voir nos démonstrations</span></a>
+        <a href="#contact" class="btn btn-outline magnetic"><span>Demander un audit gratuit</span></a>
+      </div>
+
+      <div class="hero-stats reveal">
+        <div class="stat">
+          <span class="stat-num" data-count="3">0</span>
+          <span class="stat-label">pôles d'expertise</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="100" data-suffix="%">0</span>
+          <span class="stat-label">solutions sur mesure</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num" data-count="24" data-suffix="/7">0</span>
+          <span class="stat-label">support &amp; suivi</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="scroll-cue reveal" aria-hidden="true">
+      <span></span>
+      <p>Défiler</p>
+    </div>
+  </section>
+
+  <!-- ================= MARQUEE ================= -->
+  <div class="marquee" aria-hidden="true">
+    <div class="marquee-track">
+      <span>Gestion d'activités</span><span class="dot">&bull;</span>
+      <span>Cybersécurité</span><span class="dot">&bull;</span>
+      <span>Intelligence artificielle</span><span class="dot">&bull;</span>
+      <span>Consultance digitale</span><span class="dot">&bull;</span>
+      <span>Audit &amp; conformité</span><span class="dot">&bull;</span>
+      <span>Cloud &amp; automatisation</span><span class="dot">&bull;</span>
+      <span>Gestion d'activités</span><span class="dot">&bull;</span>
+      <span>Cybersécurité</span><span class="dot">&bull;</span>
+      <span>Intelligence artificielle</span><span class="dot">&bull;</span>
+      <span>Consultance digitale</span><span class="dot">&bull;</span>
+      <span>Audit &amp; conformité</span><span class="dot">&bull;</span>
+      <span>Cloud &amp; automatisation</span><span class="dot">&bull;</span>
+    </div>
+  </div>
+
+  <!-- ================= SERVICES ================= -->
+  <section class="services" id="services">
+    <div class="container">
+      <p class="section-eyebrow reveal"><span class="section-index">01</span>Nos expertises</p>
+      <h2 class="section-title reveal">Trois pôles, une seule ambition&nbsp;: votre performance</h2>
+
+      <div class="services-grid" id="servicesGrid">
+
+        <article class="service-card spotlight reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="40" height="40">
+              <rect x="6" y="10" width="36" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 18 H42" stroke="currentColor" stroke-width="2"/>
+              <circle cx="12" cy="14" r="1.4" fill="currentColor"/>
+              <circle cx="17" cy="14" r="1.4" fill="currentColor"/>
+              <path d="M14 40 H34 M24 34 V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+            </svg>
+          </div>
+          <h3>Systèmes de gestion d'activités</h3>
+          <p>
+            Applications métiers et ERP conçus pour votre réalité&nbsp;: gestion sur place ou à distance,
+            multi-sites, multi-utilisateurs. De la prise de commande à la comptabilité, en passant par les stocks
+            et les ressources humaines.
+          </p>
+          <ul class="service-list">
+            <li>Applications métiers &amp; ERP sur mesure</li>
+            <li>Gestion multi-sites, en ligne ou hors-ligne</li>
+            <li>Tableaux de bord &amp; reporting en temps réel</li>
+          </ul>
+        </article>
+
+        <article class="service-card spotlight reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="40" height="40">
+              <path d="M24 4 L40 10 V22 C40 32 33 39 24 42 C15 39 8 32 8 22 V10 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M17 23 L22 28 L32 17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <h3>Audit de cybersécurité</h3>
+          <p>
+            Identifiez vos vulnérabilités avant qu'elles ne soient exploitées. Nous analysons vos systèmes,
+            réseaux et applications, puis déployons des mesures de protection adaptées à votre contexte.
+          </p>
+          <ul class="service-list">
+            <li>Audit &amp; cartographie des risques</li>
+            <li>Mise en place de systèmes de sécurité adaptés</li>
+            <li>Recommandations priorisées &amp; accompagnement</li>
+          </ul>
+        </article>
+
+        <article class="service-card spotlight reveal">
+          <div class="service-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" width="40" height="40">
+              <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M24 6 C30 12 30 36 24 42 C18 36 18 12 24 6 Z" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M6 24 H42" stroke="currentColor" stroke-width="2"/>
+            </svg>
+          </div>
+          <h3>Consultance digitale</h3>
+          <p>
+            Une présence digitale complète et cohérente&nbsp;: site web, contenu, outils internes. Nous vous
+            aidons à structurer votre communication et vos processus pour gagner en efficacité et en crédibilité.
+          </p>
+          <ul class="service-list">
+            <li>Création de sites web &amp; présence digitale</li>
+            <li>Aide à la création de contenu</li>
+            <li>Mise en place de systèmes de gestion interne</li>
+          </ul>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= DEMOS ================= -->
+  <section class="demos" id="demos">
+    <div class="container">
+      <p class="section-eyebrow reveal"><span class="section-index">02</span>En action</p>
+      <h2 class="section-title reveal">Nos applications, en démonstration</h2>
+      <p class="section-lead reveal">
+        Un aperçu concret des systèmes de gestion que nous avons conçus et déployés pour nos clients.
+      </p>
+
+      <div class="demos-grid" id="demosGrid">
+
+        <article class="demo-card spotlight reveal">
+          <div class="demo-media" data-video-src="" data-poster="assets/placeholder-demo-1.svg">
+            <img class="demo-poster" src="assets/placeholder-demo-1.svg" alt="Aperçu de la démonstration : gestion hôtelière" loading="lazy" width="640" height="360">
+            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <div class="demo-body">
+            <h3>Gestion hôtelière</h3>
+            <p>Réservations, facturation et suivi des chambres en temps réel, avec accès distant.</p>
+          </div>
+        </article>
+
+        <article class="demo-card spotlight reveal">
+          <div class="demo-media" data-video-src="" data-poster="assets/placeholder-demo-2.svg">
+            <img class="demo-poster" src="assets/placeholder-demo-2.svg" alt="Aperçu de la démonstration : gestion de restaurant" loading="lazy" width="640" height="360">
+            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <div class="demo-body">
+            <h3>Gestion de restauration</h3>
+            <p>Commandes, cuisine et facturation synchronisées sur un même flux de travail.</p>
+          </div>
+        </article>
+
+        <article class="demo-card spotlight reveal">
+          <div class="demo-media" data-video-src="" data-poster="assets/placeholder-demo-3.svg">
+            <img class="demo-poster" src="assets/placeholder-demo-3.svg" alt="Aperçu de la démonstration : ERP comptable" loading="lazy" width="640" height="360">
+            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <div class="demo-body">
+            <h3>ERP comptable multi-société</h3>
+            <p>Comptabilité normée SYSCOHADA, consolidée sur plusieurs entités.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <p class="demos-note reveal">Vidéos de démonstration à venir &mdash; remplacez les espaces réservés dans <code>assets/</code> et renseignez <code>data-video-src</code> pour activer la lecture.</p>
+    </div>
+  </section>
+
+  <!-- ================= A PROPOS ================= -->
+  <section class="about" id="apropos">
+    <div class="container about-inner">
+      <div class="about-text reveal">
+        <p class="section-eyebrow"><span class="section-index">03</span>Pourquoi ForgeSafe &amp; AI</p>
+        <h2 class="section-title">Une expertise technique, pensée pour le terrain africain</h2>
+        <p>
+          Nous combinons ingénierie logicielle, sécurité et sens du terrain pour livrer des outils réellement
+          utilisés au quotidien &mdash; pas seulement des maquettes. Chaque projet est pensé pour fonctionner avec
+          une connectivité variable, des équipes multiples, et des besoins qui évoluent.
+        </p>
+        <div class="about-points">
+          <div class="about-point">
+            <h4>Sur mesure</h4>
+            <p>Chaque solution est conçue autour de vos processus réels, pas l'inverse.</p>
+          </div>
+          <div class="about-point">
+            <h4>Sécurité intégrée</h4>
+            <p>La cybersécurité n'est pas une option ajoutée après coup, mais une base du projet.</p>
+          </div>
+          <div class="about-point">
+            <h4>Accompagnement continu</h4>
+            <p>Formation, suivi et évolutions après le déploiement.</p>
+          </div>
+        </div>
+      </div>
+      <div class="about-visual reveal" aria-hidden="true">
+        <div class="orbit-card">
+          <div class="orbit-ring"></div>
+          <div class="orbit-ring orbit-ring-2"></div>
+          <div class="orbit-dot"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= TEAM ================= -->
+  <section class="team" id="equipe">
+    <div class="container">
+      <p class="section-eyebrow reveal"><span class="section-index">04</span>L'équipe</p>
+      <h2 class="section-title reveal">Les personnes derrière ForgeSafe &amp; AI</h2>
+      <p class="section-lead reveal">
+        Une équipe restreinte, directement impliquée dans chaque projet, de la conception au déploiement.
+      </p>
+
+      <div class="team-grid" id="teamGrid">
+
+        <article class="team-card spotlight reveal">
+          <div class="team-photo">
+            <img src="assets/images/team-antony-demozart.jpeg" alt="Antony Georges Demozart, Responsable Projet" loading="lazy">
+          </div>
+          <div class="team-body">
+            <h3>Antony Georges Demozart</h3>
+            <p class="team-role">Responsable Projet</p>
+            <p class="team-desc">Pilotage des projets clients, de la conception au déploiement.</p>
+          </div>
+        </article>
+
+        <article class="team-card spotlight reveal">
+          <div class="team-photo">
+            <img src="assets/images/team-koffi-aime-amen.jpeg" alt="Koffi Aimé Amen, Responsable Ingénierie" loading="lazy">
+          </div>
+          <div class="team-body">
+            <h3>Koffi Aimé Amen</h3>
+            <p class="team-role">Responsable Ingénierie</p>
+            <p class="team-desc">Architecture technique et supervision du développement.</p>
+          </div>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CONTACT ================= -->
+  <section class="contact" id="contact">
+    <div class="container contact-inner">
+      <div class="contact-text reveal">
+        <p class="section-eyebrow"><span class="section-index">05</span>Parlons de votre projet</p>
+        <h2 class="section-title">Prêt à sécuriser et digitaliser votre activité&nbsp;?</h2>
+        <p>Décrivez-nous votre besoin, nous revenons vers vous rapidement.</p>
+
+        <ul class="contact-info">
+          <li>
+            <span class="contact-label">Email</span>
+            <a href="mailto:contact@forgesafe-ai.africa">contact@forgesafe-ai.africa</a>
+          </li>
+          <li>
+            <span class="contact-label">Téléphone</span>
+            <a href="tel:+225XXXXXXXXX">+225 XX XX XX XX XX</a>
+          </li>
+          <li>
+            <span class="contact-label">Localisation</span>
+            <span>Abidjan, Côte d'Ivoire &mdash; interventions dans toute l'Afrique de l'Ouest</span>
+          </li>
+        </ul>
+      </div>
+
+      <form class="contact-form reveal" id="contactForm" novalidate>
+        <div class="form-row">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" required autocomplete="name">
+        </div>
+        <div class="form-row">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </div>
+        <div class="form-row">
+          <label for="service">Service souhaité</label>
+          <select id="service" name="service">
+            <option value="gestion">Système de gestion d'activités</option>
+            <option value="cybersecurite">Audit de cybersécurité</option>
+            <option value="consultance">Consultance digitale</option>
+            <option value="autre">Autre / je ne sais pas encore</option>
+          </select>
+        </div>
+        <div class="form-row">
+          <label for="message">Votre message</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary btn-block magnetic"><span>Envoyer la demande</span></button>
+        <p class="form-note" id="formNote" role="status"></p>
+      </form>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <a href="#top" class="brand brand-footer">
+      <span class="brand-mark">
+        <img src="assets/images/logo-icon.png" alt="ForgeSafe & AI for Africa" width="39" height="32">
+      </span>
+      <span class="brand-text">ForgeSafe<span class="brand-accent">&amp;AI</span><span class="brand-sub">for Africa</span></span>
+    </a>
+    <nav class="footer-nav">
+      <a href="#services">Services</a>
+      <a href="#demos">Démonstrations</a>
+      <a href="#apropos">À propos</a>
+      <a href="#equipe">Équipe</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="footer-socials">
+      <a href="#" aria-label="LinkedIn">in</a>
+      <a href="#" aria-label="Twitter / X">X</a>
+      <a href="#" aria-label="WhatsApp">Wa</a>
+    </div>
+  </div>
+  <div class="container footer-bottom">
+    <p>&copy; <span id="year"></span> ForgeSafe &amp; AI for Africa. Tous droits réservés.</p>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
