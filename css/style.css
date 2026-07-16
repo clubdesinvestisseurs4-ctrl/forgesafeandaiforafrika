@@ -3,13 +3,13 @@
    ========================================================= */
 
 :root {
-  --bg: #0a0e14;
-  --bg-alt: #10151f;
-  --bg-card: #131a26;
-  --border: rgba(255, 255, 255, 0.08);
-  --text: #eef1f6;
-  --text-dim: #9aa5b5;
-  --text-faint: #6b7688;
+  --bg: #f7f8fa;
+  --bg-alt: #eef1f5;
+  --bg-card: #ffffff;
+  --border: rgba(13, 20, 30, 0.1);
+  --text: #10151f;
+  --text-dim: #4a5568;
+  --text-faint: #78829a;
   --accent: #e8c572;
   --accent-2: #c99e48;
   --accent-rgb: 232, 197, 114;
@@ -165,13 +165,13 @@ html.has-custom-cursor button {
   top: 0; left: 0; right: 0;
   z-index: 100;
   backdrop-filter: blur(14px) saturate(140%);
-  background: rgba(10, 14, 20, 0.65);
+  background: rgba(247, 248, 250, 0.65);
   border-bottom: 1px solid transparent;
   transition: border-color 0.3s ease, background 0.3s ease;
 }
 .site-header.scrolled {
   border-bottom-color: var(--border);
-  background: rgba(10, 14, 20, 0.85);
+  background: rgba(247, 248, 250, 0.85);
 }
 
 .header-inner {
@@ -262,8 +262,8 @@ html.has-custom-cursor button {
 .grid-lines {
   position: absolute; inset: -40px;
   background-image:
-    linear-gradient(rgba(255,255,255,0.035) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,0.035) 1px, transparent 1px);
+    linear-gradient(rgba(16,21,31,0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(16,21,31,0.06) 1px, transparent 1px);
   background-size: 64px 64px;
   mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
   transition: transform 0.2s linear;
@@ -560,7 +560,7 @@ section { position: relative; padding: 120px 0; }
 .demo-media {
   position: relative;
   aspect-ratio: 16 / 9;
-  background: #060a10;
+  background: #dfe3e9;
   overflow: hidden;
 }
 .demo-poster {
@@ -583,8 +583,8 @@ section { position: relative; padding: 120px 0; }
   transform: translate(-50%, -50%);
   width: 56px; height: 56px;
   border-radius: 50%;
-  border: 1px solid rgba(255,255,255,0.25);
-  background: rgba(10,14,20,0.6);
+  border: 1px solid rgba(255,255,255,0.4);
+  background: rgba(16,21,31,0.55);
   backdrop-filter: blur(6px);
   color: #fff;
   display: flex; align-items: center; justify-content: center;
@@ -690,7 +690,7 @@ section { position: relative; padding: 120px 0; }
 .team-photo {
   aspect-ratio: 4 / 5;
   overflow: hidden;
-  background: #060a10;
+  background: #dfe3e9;
 }
 .team-photo img {
   width: 100%; height: 100%;
@@ -836,7 +836,7 @@ section { position: relative; padding: 120px 0; }
     top: 76px; left: 0; right: 0;
     flex-direction: column;
     gap: 0;
-    background: rgba(10,14,20,0.97);
+    background: rgba(247,248,250,0.98);
     border-bottom: 1px solid var(--border);
     padding: 12px 24px 24px;
   }
