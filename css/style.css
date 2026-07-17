@@ -268,6 +268,52 @@ html.has-custom-cursor button {
   mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
   transition: transform 0.2s linear;
 }
+/* minimalist, animated Africa silhouette, embedded behind the circuit lines */
+.africa-map {
+  position: absolute;
+  top: 50%;
+  right: -8%;
+  transform: translateY(-50%);
+  width: min(56vw, 620px);
+  height: auto;
+  opacity: 0.16;
+  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 55%, transparent 92%);
+  animation: africaDrift 22s ease-in-out infinite;
+  will-change: transform;
+}
+.africa-shape {
+  fill: rgba(var(--accent-rgb), 0.05);
+  stroke: rgba(var(--accent-rgb), 0.45);
+  stroke-width: 1.3;
+  stroke-linejoin: round;
+  stroke-dasharray: 7 6;
+  animation: circuitFlow 48s linear infinite;
+  vector-effect: non-scaling-stroke;
+}
+.africa-node {
+  fill: var(--accent-2);
+  opacity: 0.6;
+  animation: nodePulse 3.4s ease-in-out infinite;
+}
+.africa-node-hq {
+  fill: var(--accent);
+  opacity: 0.9;
+  animation: nodePulse 2.6s ease-in-out infinite;
+}
+@keyframes africaDrift {
+  0%, 100% { transform: translateY(-50%) translateX(0) scale(1); }
+  50% { transform: translateY(-52%) translateX(-14px) scale(1.02); }
+}
+@media (max-width: 980px) {
+  .africa-map { width: 70vw; opacity: 0.12; right: -14%; }
+}
+@media (max-width: 760px) {
+  .africa-map { width: 92vw; opacity: 0.09; right: -22%; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .africa-map, .africa-shape, .africa-node, .africa-node-hq { animation: none; }
+}
+
 .circuit {
   position: absolute; inset: 0;
   width: 100%; height: 100%;
@@ -576,6 +622,14 @@ section { position: relative; padding: 120px 0; }
   width: 100%; height: 100%;
   object-fit: cover;
 }
+
+.demo-preview {
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+.demo-media.is-previewing .demo-preview { opacity: 1; }
+.demo-media.is-previewing .demo-poster { opacity: 0; }
+.demo-media.is-previewing .play-btn { opacity: 0.55; }
 
 .play-btn {
   position: absolute;

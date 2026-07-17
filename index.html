@@ -55,6 +55,13 @@
   <section class="hero">
     <div class="hero-bg" aria-hidden="true">
       <div class="grid-lines" id="gridLines"></div>
+      <svg class="africa-map" viewBox="0 0 600 620" preserveAspectRatio="xMidYMid meet">
+        <path class="africa-shape" d="M185 20 C260 8 300 8 330 15 C380 28 415 52 430 70 C450 92 458 118 470 140 C486 168 502 178 520 190 C500 218 472 232 455 250 C440 278 434 310 430 340 C418 372 402 402 390 430 C368 468 352 494 340 520 C325 552 312 578 300 600 C270 588 248 574 230 560 C208 528 196 498 190 470 C172 438 158 408 150 380 C132 348 122 322 120 300 C104 280 92 264 100 230 C112 216 128 216 140 210 C104 210 82 202 70 190 C50 172 42 160 40 150 C56 122 74 104 90 90 C110 68 130 52 150 40 C162 32 174 26 185 20 Z" />
+        <circle class="africa-node africa-node-hq" cx="72" cy="182" r="4.5"/>
+        <circle class="africa-node" cx="330" cy="45" r="3"/>
+        <circle class="africa-node" cx="480" cy="185" r="3"/>
+        <circle class="africa-node" cx="240" cy="540" r="3"/>
+      </svg>
       <svg class="circuit" viewBox="0 0 1200 800" preserveAspectRatio="none">
         <path class="circuit-path" d="M0 120 H260 V280 H520 V90 H820 V340" />
         <path class="circuit-path circuit-path-2" d="M1200 640 H940 V420 H700 V700 H360" />
@@ -210,47 +217,59 @@
       <div class="demos-grid" id="demosGrid">
 
         <article class="demo-card spotlight reveal">
-          <div class="demo-media" data-video-src="" data-poster="assets/placeholder-demo-1.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-1.svg" alt="Aperçu de la démonstration : gestion hôtelière" loading="lazy" width="640" height="360">
+          <div class="demo-media" data-video-src="assets/data-video-src/demo1.mp4" data-poster="assets/placeholder-demo-1.svg">
+            <img class="demo-poster" src="assets/placeholder-demo-1.svg" alt="Aperçu de la démonstration : pointage et gestion RH numérique" loading="lazy" width="640" height="360">
             <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
               <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="demo-body">
-            <h3>Gestion hôtelière</h3>
-            <p>Réservations, facturation et suivi des chambres en temps réel, avec accès distant.</p>
+            <h3>Pointage &amp; RH numérique</h3>
+            <p>
+              Fini les feuilles de présence papier&nbsp;: chaque employé pointe son arrivée en un scan, dépose ses
+              demandes de congé ou d'avance depuis son téléphone, et la paie se calcule automatiquement en fin de
+              mois &mdash; déployé sur plusieurs sites, pour plusieurs entreprises.
+            </p>
           </div>
         </article>
 
         <article class="demo-card spotlight reveal">
-          <div class="demo-media" data-video-src="" data-poster="assets/placeholder-demo-2.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-2.svg" alt="Aperçu de la démonstration : gestion de restaurant" loading="lazy" width="640" height="360">
-            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
-              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
-            </button>
-          </div>
-          <div class="demo-body">
-            <h3>Gestion de restauration</h3>
-            <p>Commandes, cuisine et facturation synchronisées sur un même flux de travail.</p>
-          </div>
-        </article>
-
-        <article class="demo-card spotlight reveal">
-          <div class="demo-media" data-video-src="" data-poster="assets/placeholder-demo-3.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-3.svg" alt="Aperçu de la démonstration : ERP comptable" loading="lazy" width="640" height="360">
+          <div class="demo-media" data-video-src="assets/data-video-src/demo2.mp4" data-poster="assets/placeholder-demo-2.svg">
+            <img class="demo-poster" src="assets/placeholder-demo-2.svg" alt="Aperçu de la démonstration : ERP comptable multi-société" loading="lazy" width="640" height="360">
             <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
               <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="demo-body">
             <h3>ERP comptable multi-société</h3>
-            <p>Comptabilité normée SYSCOHADA, consolidée sur plusieurs entités.</p>
+            <p>
+              Deux entreprises, une seule comptabilité normée SYSCOHADA. Journaux, balances et états financiers se
+              consolident automatiquement par société &mdash; ce qui prenait des jours de rapprochement tient
+              désormais dans un tableau de bord.
+            </p>
+          </div>
+        </article>
+
+        <article class="demo-card spotlight reveal">
+          <div class="demo-media" data-video-src="assets/data-video-src/demo3.mp4" data-poster="assets/placeholder-demo-3.svg">
+            <img class="demo-poster" src="assets/placeholder-demo-3.svg" alt="Aperçu de la démonstration : gestion de restaurant CookAfrica" loading="lazy" width="640" height="360">
+            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
+              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
+            </button>
+          </div>
+          <div class="demo-body">
+            <h3>Gestion de restaurant &mdash; CookAfrica</h3>
+            <p>
+              Une commande prise en salle arrive instantanément en cuisine et au bar, chaque poste facture sa part,
+              et tout se recoupe à la caisse sans ressaisie. C'est l'outil que CookAfrica utilise chaque jour en
+              production.
+            </p>
           </div>
         </article>
 
       </div>
 
-      <p class="demos-note reveal">Vidéos de démonstration à venir &mdash; remplacez les espaces réservés dans <code>assets/</code> et renseignez <code>data-video-src</code> pour activer la lecture.</p>
+      <p class="demos-note reveal">Extraits filmés directement depuis nos applications, chez nos propres clients &mdash; survolez une carte pour un aperçu, cliquez pour la voir en entier.</p>
     </div>
   </section>
 
