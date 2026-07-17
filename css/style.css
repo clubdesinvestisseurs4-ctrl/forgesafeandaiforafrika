@@ -272,32 +272,32 @@ html.has-custom-cursor button {
 .africa-map {
   position: absolute;
   top: 50%;
-  right: -8%;
+  right: -6%;
   transform: translateY(-50%);
-  width: min(56vw, 620px);
+  width: min(52vw, 600px);
   height: auto;
-  opacity: 0.16;
-  mask-image: radial-gradient(ellipse 70% 70% at 50% 50%, black 55%, transparent 92%);
-  animation: africaDrift 22s ease-in-out infinite;
+  mask-image: radial-gradient(ellipse 68% 68% at 50% 50%, black 60%, transparent 96%);
+  animation: africaDrift 26s ease-in-out infinite;
   will-change: transform;
 }
 .africa-shape {
-  fill: rgba(var(--accent-rgb), 0.05);
-  stroke: rgba(var(--accent-rgb), 0.45);
-  stroke-width: 1.3;
+  fill: rgba(var(--accent-rgb), 0.09);
+  stroke: rgba(var(--accent2-rgb), 0.55);
+  stroke-width: 1.6;
   stroke-linejoin: round;
+  stroke-linecap: round;
   stroke-dasharray: 7 6;
-  animation: circuitFlow 48s linear infinite;
+  animation: circuitFlow 60s linear infinite;
   vector-effect: non-scaling-stroke;
 }
 .africa-node {
   fill: var(--accent-2);
-  opacity: 0.6;
+  opacity: 0.75;
   animation: nodePulse 3.4s ease-in-out infinite;
 }
 .africa-node-hq {
   fill: var(--accent);
-  opacity: 0.9;
+  opacity: 1;
   animation: nodePulse 2.6s ease-in-out infinite;
 }
 @keyframes africaDrift {
@@ -305,10 +305,10 @@ html.has-custom-cursor button {
   50% { transform: translateY(-52%) translateX(-14px) scale(1.02); }
 }
 @media (max-width: 980px) {
-  .africa-map { width: 70vw; opacity: 0.12; right: -14%; }
+  .africa-map { width: 66vw; right: -12%; }
 }
 @media (max-width: 760px) {
-  .africa-map { width: 92vw; opacity: 0.09; right: -22%; }
+  .africa-map { width: 88vw; right: -20%; opacity: 0.7; }
 }
 @media (prefers-reduced-motion: reduce) {
   .africa-map, .africa-shape, .africa-node, .africa-node-hq { animation: none; }
