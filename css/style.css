@@ -268,50 +268,21 @@ html.has-custom-cursor button {
   mask-image: radial-gradient(ellipse at center, black 0%, transparent 75%);
   transition: transform 0.2s linear;
 }
-/* minimalist, animated Africa silhouette, embedded behind the circuit lines */
-.africa-map {
+/* rotating wireframe globe, embedded behind the circuit lines */
+.hero-globe {
   position: absolute;
   top: 50%;
-  right: -6%;
+  right: -4%;
   transform: translateY(-50%);
-  width: min(52vw, 600px);
-  height: auto;
-  mask-image: radial-gradient(ellipse 68% 68% at 50% 50%, black 60%, transparent 96%);
-  animation: africaDrift 26s ease-in-out infinite;
-  will-change: transform;
-}
-.africa-shape {
-  fill: rgba(var(--accent-rgb), 0.09);
-  stroke: rgba(var(--accent2-rgb), 0.55);
-  stroke-width: 1.6;
-  stroke-linejoin: round;
-  stroke-linecap: round;
-  stroke-dasharray: 7 6;
-  animation: circuitFlow 60s linear infinite;
-  vector-effect: non-scaling-stroke;
-}
-.africa-node {
-  fill: var(--accent-2);
-  opacity: 0.75;
-  animation: nodePulse 3.4s ease-in-out infinite;
-}
-.africa-node-hq {
-  fill: var(--accent);
-  opacity: 1;
-  animation: nodePulse 2.6s ease-in-out infinite;
-}
-@keyframes africaDrift {
-  0%, 100% { transform: translateY(-50%) translateX(0) scale(1); }
-  50% { transform: translateY(-52%) translateX(-14px) scale(1.02); }
+  width: min(50vw, 580px);
+  height: min(50vw, 580px);
+  mask-image: radial-gradient(ellipse 68% 68% at 50% 50%, black 65%, transparent 97%);
 }
 @media (max-width: 980px) {
-  .africa-map { width: 66vw; right: -12%; }
+  .hero-globe { width: 62vw; height: 62vw; right: -10%; }
 }
 @media (max-width: 760px) {
-  .africa-map { width: 88vw; right: -20%; opacity: 0.7; }
-}
-@media (prefers-reduced-motion: reduce) {
-  .africa-map, .africa-shape, .africa-node, .africa-node-hq { animation: none; }
+  .hero-globe { width: 82vw; height: 82vw; right: -16%; opacity: 0.75; }
 }
 
 .circuit {
