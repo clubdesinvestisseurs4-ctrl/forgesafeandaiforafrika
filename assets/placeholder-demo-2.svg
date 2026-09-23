@@ -13,7 +13,7 @@
   <circle cx="320" cy="150" r="46" fill="none" stroke="#f2b134" stroke-width="2" opacity="0.5"/>
   <path d="M308 132 L340 150 L308 168 Z" fill="#f2b134" opacity="0.6"/>
   <text x="320" y="250" text-anchor="middle" font-family="Inter, sans-serif" font-size="20" fill="#9aa5b5">
-    Démo — ERP comptable multi-société
+    Démo : ERP comptable multi-société
   </text>
   <text x="320" y="278" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" fill="#6b7688">
     Survolez pour un aperçu
