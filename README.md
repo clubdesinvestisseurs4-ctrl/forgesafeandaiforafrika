@@ -10,6 +10,7 @@ index.html          Page unique (header, hero, marquee, services, démos, à pro
 css/style.css        Design system (couleurs, composants, responsive)
 js/main.js           Lenis smooth scroll, GSAP ScrollTrigger reveals, curseur custom, boutons magnétiques,
                      spotlight cartes, nav mobile, compteurs animés, lecture vidéo lazy, formulaire
+js/i18n.js           Système bilingue FR/EN (voir section "Langue FR/EN" ci-dessous)
 assets/              Favicons (générés depuis le logo) + posters placeholder pour les démos
 assets/images/       Logo source + déclinaisons découpées, photos de l'équipe
 vercel.json          Config de déploiement Vercel
@@ -42,10 +43,17 @@ réutiliser les anciens fichiers.
 
 ## Équipe
 
-La section `#equipe` affiche les deux responsables avec leurs photos
-(`assets/images/team-antony-demozart.jpeg`, `assets/images/team-koffi-aime-amen.jpeg`), nom et rôle.
-Pour ajouter/modifier un membre, dupliquer un bloc `.team-card` dans `index.html` et déposer la photo
-dans `assets/images/`.
+La section `#equipe` affiche 5 membres avec leurs photos, nom et rôle : Antony Georges Demozart et
+Koffi Aimé Amen (les deux responsables réels), ainsi que Julien Moreau, Marc Willemsen et Camille
+Berthier.
+
+**Note interne (à conserver, ne pas publier) :** les photos de Julien, Marc et Camille sont des visages
+générés par IA (thispersondoesnotexist.com / StyleGAN2 — aucune vraie personne, aucun droit à l'image
+concerné), ajoutées à la demande du fondateur pour donner une impression d'équipe plus internationale.
+Les noms et rôles associés sont fictifs. Si un client ou partenaire demandait un jour à rencontrer l'un
+d'eux, il faudra en tenir compte. Pour les remplacer par de vraies personnes plus tard : dupliquer un
+bloc `.team-card` dans `index.html`, déposer la photo dans `assets/images/`, et mettre à jour les clés
+`team.julien.*` / `team.marc.*` / `team.camille.*` dans `js/i18n.js` (voir section i18n plus bas).
 
 ## À personnaliser avant mise en ligne
 
@@ -57,6 +65,32 @@ dans `assets/images/`.
 - **Formulaire de contact** (`js/main.js`) : la soumission est actuellement simulée côté client. Branchez
   un service comme Formspree, EmailJS, ou un endpoint backend maison pour recevoir réellement les messages.
 - **Réseaux sociaux** (footer) : liens `#` à remplacer par les vrais profils.
+
+## Langue FR/EN
+
+Le site est bilingue. `js/i18n.js` contient un dictionnaire `{ fr: {...}, en: {...} }` et applique la
+traduction à tous les éléments porteurs d'un attribut `data-i18n="clé"` (texte) ou
+`data-i18n-attr="attribut:clé"` (attributs comme `alt`, `aria-label`, `content`).
+
+Détection automatique au premier chargement (dans cet ordre) :
+1. Choix déjà mémorisé (`localStorage`, clé `forgesafe-lang`) — un clic sur FR/EN prime toujours sur le
+   reste et est mémorisé.
+2. Langue du navigateur (`navigator.language`).
+3. Géolocalisation IP via l'API gratuite `ipapi.co` (pays anglophones : GB, US, CA, AU, NZ, IE) — best
+   effort, timeout 2,5s, silencieux en cas d'échec (pas de clé API requise, mais dépendance à un service
+   tiers externe, comme les CDN GSAP/Lenis déjà utilisés par le site).
+4. Sinon, français par défaut.
+
+Pour ajouter/modifier un texte : éditer la valeur correspondante dans les deux blocs (`fr` et `en`) de
+`js/i18n.js`. Les noms propres (marque, prénoms/noms de l'équipe) ne sont pas dans le dictionnaire, ils
+restent identiques dans les deux langues directement dans `index.html`.
+
+## Infrastructure cloud
+
+La section "À propos" affiche deux badges neutres ("Notre infrastructure tourne sur : Microsoft Azure,
+Amazon AWS"). Ce sont des mentions d'usage technique, **pas** une revendication de partenariat officiel
+avec Microsoft ou Amazon — à ne pas transformer en "partenaire officiel" sans un vrai statut de
+partenaire (ex. Microsoft for Startups, AWS Activate), sous peine de fausse publicité.
 
 ## Déploiement (Vercel)
 
@@ -76,6 +110,7 @@ dans `assets/images/`.
 
 ## Dépendances externes (CDN)
 
-Le site charge Google Fonts, GSAP, ScrollTrigger et Lenis depuis des CDN (jsdelivr/Google Fonts).
+Le site charge Google Fonts, GSAP, ScrollTrigger et Lenis depuis des CDN (jsdelivr/Google Fonts), ainsi
+que `ipapi.co` pour la détection de langue par IP (best effort, voir section "Langue FR/EN").
 Une connexion Internet est donc nécessaire au runtime pour ces éléments ; le reste du site (contenu,
 navigation, formulaire) fonctionne sans eux grâce aux replis prévus dans `js/main.js`.

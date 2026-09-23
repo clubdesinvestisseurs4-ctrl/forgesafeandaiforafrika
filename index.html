@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>ForgeSafe &amp; AI for Africa — Systèmes de gestion, Cybersécurité, Consultance digitale</title>
-<meta name="description" content="ForgeSafe & AI for Africa accompagne les entreprises africaines avec des systèmes de gestion d'activités, des audits de cybersécurité et de la consultance digitale sur mesure.">
+<title data-i18n="meta.title">ForgeSafe &amp; AI for Africa — Systèmes de gestion, Cybersécurité, Consultance digitale</title>
+<meta name="description" content="ForgeSafe & AI for Africa accompagne les entreprises africaines avec des systèmes de gestion d'activités, des audits de cybersécurité et de la consultance digitale sur mesure." data-i18n-attr="content:meta.description">
 <meta property="og:title" content="ForgeSafe & AI for Africa">
 <meta property="og:description" content="Systèmes de gestion, audit de cybersécurité et consultance digitale pour les entreprises africaines.">
 <meta property="og:type" content="website">
@@ -34,16 +34,21 @@
     </a>
 
     <nav class="main-nav" id="main-nav">
-      <a href="#services" data-nav>Services</a>
-      <a href="#demos" data-nav>Démonstrations</a>
-      <a href="#apropos" data-nav>À propos</a>
-      <a href="#equipe" data-nav>Équipe</a>
-      <a href="#contact" data-nav>Contact</a>
+      <a href="#services" data-nav data-i18n="nav.services">Services</a>
+      <a href="#demos" data-nav data-i18n="nav.demos">Démonstrations</a>
+      <a href="#apropos" data-nav data-i18n="nav.about">À propos</a>
+      <a href="#equipe" data-nav data-i18n="nav.team">Équipe</a>
+      <a href="#contact" data-nav data-i18n="nav.contact">Contact</a>
     </nav>
 
-    <a href="#contact" class="btn btn-primary btn-sm nav-cta magnetic"><span>Discutons de votre projet</span></a>
+    <a href="#contact" class="btn btn-primary btn-sm nav-cta magnetic"><span data-i18n="nav.cta">Discutons de votre projet</span></a>
 
-    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" aria-expanded="false">
+    <div class="lang-switch" id="langSwitch" role="group" aria-label="Choix de la langue / Language switch">
+      <button type="button" class="lang-btn is-active" data-lang="fr" aria-pressed="true">FR</button>
+      <button type="button" class="lang-btn" data-lang="en" aria-pressed="false">EN</button>
+    </div>
+
+    <button class="nav-toggle" id="navToggle" aria-label="Ouvrir le menu" data-i18n-attr="aria-label:nav.toggle.open" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
   </div>
@@ -70,66 +75,66 @@
     </div>
 
     <div class="container hero-inner">
-      <p class="eyebrow reveal"><span class="eyebrow-prompt">&gt;</span> gestion &middot; cybersécurité &middot; ia &middot; consultance<span class="eyebrow-cursor">_</span></p>
+      <p class="eyebrow reveal"><span class="eyebrow-prompt">&gt;</span> <span data-i18n="hero.eyebrow">gestion &middot; cybersécurité &middot; ia &middot; consultance</span><span class="eyebrow-cursor">_</span></p>
       <h1 class="hero-title">
-        <span class="line"><span class="line-inner reveal-line">Nous bâtissons les systèmes</span></span>
-        <span class="line"><span class="line-inner reveal-line">numériques qui font avancer</span></span>
-        <span class="line"><span class="line-inner reveal-line"><span class="text-gradient">l'Afrique.</span></span></span>
+        <span class="line"><span class="line-inner reveal-line" data-i18n="hero.title.l1">Nous bâtissons les systèmes</span></span>
+        <span class="line"><span class="line-inner reveal-line" data-i18n="hero.title.l2">numériques qui font avancer</span></span>
+        <span class="line"><span class="line-inner reveal-line"><span class="text-gradient" data-i18n="hero.title.l3">l'Afrique.</span></span></span>
       </h1>
-      <p class="hero-lead reveal">
+      <p class="hero-lead reveal" data-i18n="hero.lead">
         ForgeSafe &amp; AI for Africa conçoit des outils de gestion sur mesure, sécurise vos infrastructures
         et accompagne votre transformation digitale &mdash; de l'idée au déploiement.
       </p>
       <div class="hero-actions reveal">
-        <a href="#demos" class="btn btn-primary magnetic"><span>Voir nos démonstrations</span></a>
-        <a href="#contact" class="btn btn-outline magnetic"><span>Demander un audit gratuit</span></a>
+        <a href="#demos" class="btn btn-primary magnetic"><span data-i18n="hero.cta.primary">Voir nos démonstrations</span></a>
+        <a href="#contact" class="btn btn-outline magnetic"><span data-i18n="hero.cta.secondary">Demander un audit gratuit</span></a>
       </div>
 
       <div class="hero-stats reveal">
         <div class="stat">
           <span class="stat-num" data-count="3">0</span>
-          <span class="stat-label">pôles d'expertise</span>
+          <span class="stat-label" data-i18n="hero.stat1">pôles d'expertise</span>
         </div>
         <div class="stat">
           <span class="stat-num" data-count="100" data-suffix="%">0</span>
-          <span class="stat-label">solutions sur mesure</span>
+          <span class="stat-label" data-i18n="hero.stat2">solutions sur mesure</span>
         </div>
         <div class="stat">
           <span class="stat-num" data-count="24" data-suffix="/7">0</span>
-          <span class="stat-label">support &amp; suivi</span>
+          <span class="stat-label" data-i18n="hero.stat3">support &amp; suivi</span>
         </div>
       </div>
     </div>
 
     <div class="scroll-cue reveal" aria-hidden="true">
       <span></span>
-      <p>Défiler</p>
+      <p data-i18n="hero.scroll">Défiler</p>
     </div>
   </section>
 
   <!-- ================= MARQUEE ================= -->
   <div class="marquee" aria-hidden="true">
     <div class="marquee-track">
-      <span>Gestion d'activités</span><span class="dot">&bull;</span>
-      <span>Cybersécurité</span><span class="dot">&bull;</span>
-      <span>Intelligence artificielle</span><span class="dot">&bull;</span>
-      <span>Consultance digitale</span><span class="dot">&bull;</span>
-      <span>Audit &amp; conformité</span><span class="dot">&bull;</span>
-      <span>Cloud &amp; automatisation</span><span class="dot">&bull;</span>
-      <span>Gestion d'activités</span><span class="dot">&bull;</span>
-      <span>Cybersécurité</span><span class="dot">&bull;</span>
-      <span>Intelligence artificielle</span><span class="dot">&bull;</span>
-      <span>Consultance digitale</span><span class="dot">&bull;</span>
-      <span>Audit &amp; conformité</span><span class="dot">&bull;</span>
-      <span>Cloud &amp; automatisation</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.1">Gestion d'activités</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.2">Cybersécurité</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.3">Intelligence artificielle</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.4">Consultance digitale</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.5">Audit &amp; conformité</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.6">Cloud &amp; automatisation</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.1">Gestion d'activités</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.2">Cybersécurité</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.3">Intelligence artificielle</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.4">Consultance digitale</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.5">Audit &amp; conformité</span><span class="dot">&bull;</span>
+      <span data-i18n="marquee.6">Cloud &amp; automatisation</span><span class="dot">&bull;</span>
     </div>
   </div>
 
   <!-- ================= SERVICES ================= -->
   <section class="services" id="services">
     <div class="container">
-      <p class="section-eyebrow reveal"><span class="section-index">01</span>Nos expertises</p>
-      <h2 class="section-title reveal">Trois pôles, une seule ambition&nbsp;: votre performance</h2>
+      <p class="section-eyebrow reveal"><span class="section-index">01</span><span data-i18n="services.eyebrow">Nos expertises</span></p>
+      <h2 class="section-title reveal" data-i18n="services.title">Trois pôles, une seule ambition&nbsp;: votre performance</h2>
 
       <div class="services-grid" id="servicesGrid">
 
@@ -143,16 +148,16 @@
               <path d="M14 40 H34 M24 34 V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
             </svg>
           </div>
-          <h3>Systèmes de gestion d'activités</h3>
-          <p>
+          <h3 data-i18n="services.card1.title">Systèmes de gestion d'activités</h3>
+          <p data-i18n="services.card1.desc">
             Applications métiers et ERP conçus pour votre réalité&nbsp;: gestion sur place ou à distance,
             multi-sites, multi-utilisateurs. De la prise de commande à la comptabilité, en passant par les stocks
             et les ressources humaines.
           </p>
           <ul class="service-list">
-            <li>Applications métiers &amp; ERP sur mesure</li>
-            <li>Gestion multi-sites, en ligne ou hors-ligne</li>
-            <li>Tableaux de bord &amp; reporting en temps réel</li>
+            <li data-i18n="services.card1.li1">Applications métiers &amp; ERP sur mesure</li>
+            <li data-i18n="services.card1.li2">Gestion multi-sites, en ligne ou hors-ligne</li>
+            <li data-i18n="services.card1.li3">Tableaux de bord &amp; reporting en temps réel</li>
           </ul>
         </article>
 
@@ -163,15 +168,15 @@
               <path d="M17 23 L22 28 L32 17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
             </svg>
           </div>
-          <h3>Audit de cybersécurité</h3>
-          <p>
+          <h3 data-i18n="services.card2.title">Audit de cybersécurité</h3>
+          <p data-i18n="services.card2.desc">
             Identifiez vos vulnérabilités avant qu'elles ne soient exploitées. Nous analysons vos systèmes,
             réseaux et applications, puis déployons des mesures de protection adaptées à votre contexte.
           </p>
           <ul class="service-list">
-            <li>Audit &amp; cartographie des risques</li>
-            <li>Mise en place de systèmes de sécurité adaptés</li>
-            <li>Recommandations priorisées &amp; accompagnement</li>
+            <li data-i18n="services.card2.li1">Audit &amp; cartographie des risques</li>
+            <li data-i18n="services.card2.li2">Mise en place de systèmes de sécurité adaptés</li>
+            <li data-i18n="services.card2.li3">Recommandations priorisées &amp; accompagnement</li>
           </ul>
         </article>
 
@@ -183,15 +188,15 @@
               <path d="M6 24 H42" stroke="currentColor" stroke-width="2"/>
             </svg>
           </div>
-          <h3>Consultance digitale</h3>
-          <p>
+          <h3 data-i18n="services.card3.title">Consultance digitale</h3>
+          <p data-i18n="services.card3.desc">
             Une présence digitale complète et cohérente&nbsp;: site web, contenu, outils internes. Nous vous
             aidons à structurer votre communication et vos processus pour gagner en efficacité et en crédibilité.
           </p>
           <ul class="service-list">
-            <li>Création de sites web &amp; présence digitale</li>
-            <li>Aide à la création de contenu</li>
-            <li>Mise en place de systèmes de gestion interne</li>
+            <li data-i18n="services.card3.li1">Création de sites web &amp; présence digitale</li>
+            <li data-i18n="services.card3.li2">Aide à la création de contenu</li>
+            <li data-i18n="services.card3.li3">Mise en place de systèmes de gestion interne</li>
           </ul>
         </article>
 
@@ -202,9 +207,9 @@
   <!-- ================= DEMOS ================= -->
   <section class="demos" id="demos">
     <div class="container">
-      <p class="section-eyebrow reveal"><span class="section-index">02</span>En action</p>
-      <h2 class="section-title reveal">Nos applications, en démonstration</h2>
-      <p class="section-lead reveal">
+      <p class="section-eyebrow reveal"><span class="section-index">02</span><span data-i18n="demos.eyebrow">En action</span></p>
+      <h2 class="section-title reveal" data-i18n="demos.title">Nos applications, en démonstration</h2>
+      <p class="section-lead reveal" data-i18n="demos.lead">
         Un aperçu concret des systèmes de gestion que nous avons conçus et déployés pour nos clients.
       </p>
 
@@ -212,14 +217,14 @@
 
         <article class="demo-card spotlight reveal">
           <div class="demo-media" data-video-src="assets/data-video-src/demo3.mp4" data-poster="assets/placeholder-demo-1.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-1.svg" alt="Aperçu de la démonstration : pointage et gestion RH numérique" loading="lazy" width="640" height="360">
-            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
+            <img class="demo-poster" src="assets/placeholder-demo-1.svg" alt="Aperçu de la démonstration : pointage et gestion RH numérique" data-i18n-attr="alt:demos.card1.alt" loading="lazy" width="640" height="360">
+            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo" data-i18n-attr="aria-label:demos.playAria">
               <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="demo-body">
-            <h3>Pointage &amp; RH numérique</h3>
-            <p>
+            <h3 data-i18n="demos.card1.title">Pointage &amp; RH numérique</h3>
+            <p data-i18n="demos.card1.desc">
               Fini les feuilles de présence papier&nbsp;: chaque employé pointe son arrivée en un scan, dépose ses
               demandes de congé ou d'avance depuis son téléphone, et la paie se calcule automatiquement en fin de
               mois &mdash; déployé sur plusieurs sites, pour plusieurs entreprises.
@@ -229,14 +234,14 @@
 
         <article class="demo-card spotlight reveal">
           <div class="demo-media" data-video-src="assets/data-video-src/demo2.mp4" data-poster="assets/placeholder-demo-2.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-2.svg" alt="Aperçu de la démonstration : ERP comptable multi-société" loading="lazy" width="640" height="360">
-            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
+            <img class="demo-poster" src="assets/placeholder-demo-2.svg" alt="Aperçu de la démonstration : ERP comptable multi-société" data-i18n-attr="alt:demos.card2.alt" loading="lazy" width="640" height="360">
+            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo" data-i18n-attr="aria-label:demos.playAria">
               <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="demo-body">
-            <h3>ERP comptable multi-société</h3>
-            <p>
+            <h3 data-i18n="demos.card2.title">ERP comptable multi-société</h3>
+            <p data-i18n="demos.card2.desc">
               Deux entreprises, une seule comptabilité normée SYSCOHADA. Journaux, balances et états financiers se
               consolident automatiquement par société &mdash; ce qui prenait des jours de rapprochement tient
               désormais dans un tableau de bord.
@@ -246,14 +251,14 @@
 
         <article class="demo-card spotlight reveal">
           <div class="demo-media" data-video-src="assets/data-video-src/demo1.mp4" data-poster="assets/placeholder-demo-3.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-3.svg" alt="Aperçu de la démonstration : gestion de restaurant CookAfrica" loading="lazy" width="640" height="360">
-            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo">
+            <img class="demo-poster" src="assets/placeholder-demo-3.svg" alt="Aperçu de la démonstration : gestion de restaurant CookAfrica" data-i18n-attr="alt:demos.card3.alt" loading="lazy" width="640" height="360">
+            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo" data-i18n-attr="aria-label:demos.playAria">
               <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="demo-body">
-            <h3>Gestion de restaurant &mdash; CookAfrica</h3>
-            <p>
+            <h3 data-i18n="demos.card3.title">Gestion de restaurant &mdash; CookAfrica</h3>
+            <p data-i18n="demos.card3.desc">
               Une commande prise en salle arrive instantanément en cuisine et au bar, chaque poste facture sa part,
               et tout se recoupe à la caisse sans ressaisie. C'est l'outil que CookAfrica utilise chaque jour en
               production.
@@ -263,7 +268,7 @@
 
       </div>
 
-      <p class="demos-note reveal">Extraits filmés directement depuis nos applications, chez nos propres clients &mdash; survolez une carte pour un aperçu, cliquez pour la voir en entier.</p>
+      <p class="demos-note reveal" data-i18n="demos.note">Extraits filmés directement depuis nos applications, chez nos propres clients &mdash; survolez une carte pour un aperçu, cliquez pour la voir en entier.</p>
     </div>
   </section>
 
@@ -271,25 +276,38 @@
   <section class="about" id="apropos">
     <div class="container about-inner">
       <div class="about-text reveal">
-        <p class="section-eyebrow"><span class="section-index">03</span>Pourquoi ForgeSafe &amp; AI</p>
-        <h2 class="section-title">Une expertise technique, pensée pour le terrain africain</h2>
-        <p>
+        <p class="section-eyebrow"><span class="section-index">03</span><span data-i18n="about.eyebrow">Pourquoi ForgeSafe &amp; AI</span></p>
+        <h2 class="section-title" data-i18n="about.title">Une expertise technique, pensée pour le terrain africain</h2>
+        <p data-i18n="about.p">
           Nous combinons ingénierie logicielle, sécurité et sens du terrain pour livrer des outils réellement
           utilisés au quotidien &mdash; pas seulement des maquettes. Chaque projet est pensé pour fonctionner avec
           une connectivité variable, des équipes multiples, et des besoins qui évoluent.
         </p>
         <div class="about-points">
           <div class="about-point">
-            <h4>Sur mesure</h4>
-            <p>Chaque solution est conçue autour de vos processus réels, pas l'inverse.</p>
+            <h4 data-i18n="about.point1.title">Sur mesure</h4>
+            <p data-i18n="about.point1.desc">Chaque solution est conçue autour de vos processus réels, pas l'inverse.</p>
           </div>
           <div class="about-point">
-            <h4>Sécurité intégrée</h4>
-            <p>La cybersécurité n'est pas une option ajoutée après coup, mais une base du projet.</p>
+            <h4 data-i18n="about.point2.title">Sécurité intégrée</h4>
+            <p data-i18n="about.point2.desc">La cybersécurité n'est pas une option ajoutée après coup, mais une base du projet.</p>
           </div>
           <div class="about-point">
-            <h4>Accompagnement continu</h4>
-            <p>Formation, suivi et évolutions après le déploiement.</p>
+            <h4 data-i18n="about.point3.title">Accompagnement continu</h4>
+            <p data-i18n="about.point3.desc">Formation, suivi et évolutions après le déploiement.</p>
+          </div>
+        </div>
+        <div class="about-infra">
+          <p class="about-infra-label" data-i18n="about.infra.label">Notre infrastructure tourne sur</p>
+          <div class="infra-badges">
+            <span class="infra-badge">
+              <svg width="16" height="16" viewBox="0 0 23 23" aria-hidden="true"><rect x="1" y="1" width="10" height="10" fill="#f25022"/><rect x="12" y="1" width="10" height="10" fill="#7fba00"/><rect x="1" y="12" width="10" height="10" fill="#00a4ef"/><rect x="12" y="12" width="10" height="10" fill="#ffb900"/></svg>
+              Microsoft Azure
+            </span>
+            <span class="infra-badge">
+              <svg width="18" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L21 7 V17 L12 22 L3 17 V7 Z" fill="none" stroke="#c99e48" stroke-width="1.6"/></svg>
+              Amazon AWS
+            </span>
           </div>
         </div>
       </div>
@@ -306,9 +324,9 @@
   <!-- ================= TEAM ================= -->
   <section class="team" id="equipe">
     <div class="container">
-      <p class="section-eyebrow reveal"><span class="section-index">04</span>L'équipe</p>
-      <h2 class="section-title reveal">Les personnes derrière ForgeSafe &amp; AI</h2>
-      <p class="section-lead reveal">
+      <p class="section-eyebrow reveal"><span class="section-index">04</span><span data-i18n="team.eyebrow">L'équipe</span></p>
+      <h2 class="section-title reveal" data-i18n="team.title">Les personnes derrière ForgeSafe &amp; AI</h2>
+      <p class="section-lead reveal" data-i18n="team.lead">
         Une équipe restreinte, directement impliquée dans chaque projet, de la conception au déploiement.
       </p>
 
@@ -316,23 +334,56 @@
 
         <article class="team-card spotlight reveal">
           <div class="team-photo">
-            <img src="assets/images/team-antony-demozart.jpeg" alt="Antony Georges Demozart, Responsable Projet" loading="lazy">
+            <img src="assets/images/team-antony-demozart.jpeg" alt="Antony Georges Demozart, Responsable Projet" data-i18n-attr="alt:team.antony.alt" loading="lazy">
           </div>
           <div class="team-body">
             <h3>Antony Georges Demozart</h3>
-            <p class="team-role">Responsable Projet</p>
-            <p class="team-desc">Pilotage des projets clients, de la conception au déploiement.</p>
+            <p class="team-role" data-i18n="team.antony.role">Responsable Projet</p>
+            <p class="team-desc" data-i18n="team.antony.desc">Pilotage des projets clients, de la conception au déploiement.</p>
           </div>
         </article>
 
         <article class="team-card spotlight reveal">
           <div class="team-photo">
-            <img src="assets/images/team-koffi-aime-amen.jpeg" alt="Koffi Aimé Amen, Responsable Ingénierie" loading="lazy">
+            <img src="assets/images/team-koffi-aime-amen.jpeg" alt="Koffi Aimé Amen, Responsable Ingénierie" data-i18n-attr="alt:team.koffi.alt" loading="lazy">
           </div>
           <div class="team-body">
             <h3>Koffi Aimé Amen</h3>
-            <p class="team-role">Responsable Ingénierie</p>
-            <p class="team-desc">Architecture technique et supervision du développement.</p>
+            <p class="team-role" data-i18n="team.koffi.role">Responsable Ingénierie</p>
+            <p class="team-desc" data-i18n="team.koffi.desc">Architecture technique et supervision du développement.</p>
+          </div>
+        </article>
+
+        <article class="team-card spotlight reveal">
+          <div class="team-photo">
+            <img src="assets/images/team-julien-moreau.jpeg" alt="Julien Moreau, Direction Commerciale & Partenariats" data-i18n-attr="alt:team.julien.alt" loading="lazy">
+          </div>
+          <div class="team-body">
+            <h3>Julien Moreau</h3>
+            <p class="team-role" data-i18n="team.julien.role">Direction Commerciale &amp; Partenariats</p>
+            <p class="team-desc" data-i18n="team.julien.desc">Développe nos partenariats à l'international et accompagne les clients hors d'Afrique de l'Ouest.</p>
+          </div>
+        </article>
+
+        <article class="team-card spotlight reveal">
+          <div class="team-photo">
+            <img src="assets/images/team-marc-willemsen.jpeg" alt="Marc Willemsen, Conseiller Cybersécurité" data-i18n-attr="alt:team.marc.alt" loading="lazy">
+          </div>
+          <div class="team-body">
+            <h3>Marc Willemsen</h3>
+            <p class="team-role" data-i18n="team.marc.role">Conseiller Cybersécurité</p>
+            <p class="team-desc" data-i18n="team.marc.desc">Apporte un regard extérieur sur nos audits et nos méthodologies de sécurité.</p>
+          </div>
+        </article>
+
+        <article class="team-card spotlight reveal">
+          <div class="team-photo">
+            <img src="assets/images/team-camille-berthier.jpeg" alt="Camille Berthier, Responsable IA & Data" data-i18n-attr="alt:team.camille.alt" loading="lazy">
+          </div>
+          <div class="team-body">
+            <h3>Camille Berthier</h3>
+            <p class="team-role" data-i18n="team.camille.role">Responsable IA &amp; Data</p>
+            <p class="team-desc" data-i18n="team.camille.desc">Pilote nos projets d'intelligence artificielle et l'exploitation des données clients.</p>
           </div>
         </article>
 
@@ -344,49 +395,49 @@
   <section class="contact" id="contact">
     <div class="container contact-inner">
       <div class="contact-text reveal">
-        <p class="section-eyebrow"><span class="section-index">05</span>Parlons de votre projet</p>
-        <h2 class="section-title">Prêt à sécuriser et digitaliser votre activité&nbsp;?</h2>
-        <p>Décrivez-nous votre besoin, nous revenons vers vous rapidement.</p>
+        <p class="section-eyebrow"><span class="section-index">05</span><span data-i18n="contact.eyebrow">Parlons de votre projet</span></p>
+        <h2 class="section-title" data-i18n="contact.title">Prêt à sécuriser et digitaliser votre activité&nbsp;?</h2>
+        <p data-i18n="contact.lead">Décrivez-nous votre besoin, nous revenons vers vous rapidement.</p>
 
         <ul class="contact-info">
           <li>
-            <span class="contact-label">Email</span>
+            <span class="contact-label" data-i18n="contact.label.email">Email</span>
             <a href="mailto:contact@forgesafe-ai.africa">contact@forgesafe-ai.africa</a>
           </li>
           <li>
-            <span class="contact-label">Téléphone</span>
+            <span class="contact-label" data-i18n="contact.label.phone">Téléphone</span>
             <a href="tel:+225XXXXXXXXX">+225 XX XX XX XX XX</a>
           </li>
           <li>
-            <span class="contact-label">Localisation</span>
-            <span>Abidjan, Côte d'Ivoire &mdash; interventions dans toute l'Afrique de l'Ouest</span>
+            <span class="contact-label" data-i18n="contact.label.location">Localisation</span>
+            <span data-i18n="contact.location.value">Abidjan, Côte d'Ivoire &mdash; interventions dans toute l'Afrique de l'Ouest</span>
           </li>
         </ul>
       </div>
 
       <form class="contact-form reveal" id="contactForm" novalidate>
         <div class="form-row">
-          <label for="name">Nom complet</label>
+          <label for="name" data-i18n="contact.form.name">Nom complet</label>
           <input type="text" id="name" name="name" required autocomplete="name">
         </div>
         <div class="form-row">
-          <label for="email">Email</label>
+          <label for="email" data-i18n="contact.form.email">Email</label>
           <input type="email" id="email" name="email" required autocomplete="email">
         </div>
         <div class="form-row">
-          <label for="service">Service souhaité</label>
+          <label for="service" data-i18n="contact.form.service">Service souhaité</label>
           <select id="service" name="service">
-            <option value="gestion">Système de gestion d'activités</option>
-            <option value="cybersecurite">Audit de cybersécurité</option>
-            <option value="consultance">Consultance digitale</option>
-            <option value="autre">Autre / je ne sais pas encore</option>
+            <option value="gestion" data-i18n="contact.form.opt1">Système de gestion d'activités</option>
+            <option value="cybersecurite" data-i18n="contact.form.opt2">Audit de cybersécurité</option>
+            <option value="consultance" data-i18n="contact.form.opt3">Consultance digitale</option>
+            <option value="autre" data-i18n="contact.form.opt4">Autre / je ne sais pas encore</option>
           </select>
         </div>
         <div class="form-row">
-          <label for="message">Votre message</label>
+          <label for="message" data-i18n="contact.form.message">Votre message</label>
           <textarea id="message" name="message" rows="4" required></textarea>
         </div>
-        <button type="submit" class="btn btn-primary btn-block magnetic"><span>Envoyer la demande</span></button>
+        <button type="submit" class="btn btn-primary btn-block magnetic"><span data-i18n="contact.form.submit">Envoyer la demande</span></button>
         <p class="form-note" id="formNote" role="status"></p>
       </form>
     </div>
@@ -404,11 +455,11 @@
       <span class="brand-text">ForgeSafe<span class="brand-accent">&amp;AI</span><span class="brand-sub">for Africa</span></span>
     </a>
     <nav class="footer-nav">
-      <a href="#services">Services</a>
-      <a href="#demos">Démonstrations</a>
-      <a href="#apropos">À propos</a>
-      <a href="#equipe">Équipe</a>
-      <a href="#contact">Contact</a>
+      <a href="#services" data-i18n="nav.services">Services</a>
+      <a href="#demos" data-i18n="nav.demos">Démonstrations</a>
+      <a href="#apropos" data-i18n="nav.about">À propos</a>
+      <a href="#equipe" data-i18n="nav.team">Équipe</a>
+      <a href="#contact" data-i18n="nav.contact">Contact</a>
     </nav>
     <div class="footer-socials">
       <a href="#" aria-label="LinkedIn">in</a>
@@ -417,13 +468,14 @@
     </div>
   </div>
   <div class="container footer-bottom">
-    <p>&copy; <span id="year"></span> ForgeSafe &amp; AI for Africa. Tous droits réservés.</p>
+    <p>&copy; <span id="year"></span> ForgeSafe &amp; AI for Africa. <span data-i18n="footer.rights">Tous droits réservés.</span></p>
   </div>
 </footer>
 
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.14/dist/lenis.min.js"></script>
+<script src="js/i18n.js"></script>
 <script src="js/main.js"></script>
 </body>
 </html>

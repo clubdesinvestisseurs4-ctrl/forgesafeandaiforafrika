@@ -32,10 +32,11 @@
   /* ---------- Mobile nav toggle ---------- */
   const navToggle = document.getElementById("navToggle");
   const mainNav = document.getElementById("main-nav");
+  const t = (key, fallback) => (window.forgesafeI18n ? window.forgesafeI18n.t(key) : fallback);
   navToggle.addEventListener("click", () => {
     const isOpen = mainNav.classList.toggle("open");
     navToggle.setAttribute("aria-expanded", String(isOpen));
-    navToggle.setAttribute("aria-label", isOpen ? "Fermer le menu" : "Ouvrir le menu");
+    navToggle.setAttribute("aria-label", isOpen ? t("nav.toggle.close", "Fermer le menu") : t("nav.toggle.open", "Ouvrir le menu"));
   });
   mainNav.querySelectorAll("a").forEach((link) => {
     link.addEventListener("click", () => {
@@ -243,7 +244,7 @@
       playBtn.addEventListener("click", () => {
         playBtn.disabled = true;
         playBtn.style.opacity = "0.4";
-        playBtn.setAttribute("aria-label", "Vidéo bientôt disponible");
+        playBtn.setAttribute("aria-label", t("demos.soonAria", "Vidéo bientôt disponible"));
       });
       return;
     }
@@ -292,11 +293,11 @@
   contactForm.addEventListener("submit", (e) => {
     e.preventDefault();
     if (!contactForm.checkValidity()) {
-      formNote.textContent = "Merci de remplir tous les champs requis.";
+      formNote.textContent = t("contact.form.errorRequired", "Merci de remplir tous les champs requis.");
       return;
     }
     // NOTE: brancher ici un service d'envoi (Formspree, EmailJS, backend maison, ...).
-    formNote.textContent = "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.";
+    formNote.textContent = t("contact.form.success", "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.");
     contactForm.reset();
   });
 
