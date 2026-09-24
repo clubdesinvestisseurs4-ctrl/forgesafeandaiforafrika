@@ -55,6 +55,24 @@ d'eux, il faudra en tenir compte. Pour les remplacer par de vraies personnes plu
 bloc `.team-card` dans `index.html`, déposer la photo dans `assets/images/`, et mettre à jour les clés
 `team.julien.*` / `team.marc.*` / `team.camille.*` dans `js/i18n.js` (voir section i18n plus bas).
 
+## Produits maison (Kuwepo, CyberBrain)
+
+Deux des cartes de la section `#demos` correspondent à de vrais produits développés dans d'autres
+dossiers du groupe Abayili, pas à des maquettes :
+
+- **Kuwepo** (carte 1, `demos.card1.*`) — pointage anti-fraude (QR + Wi-Fi + reconnaissance faciale) et
+  paie automatique, développé dans `../gestion-employees` (landing page complète dans
+  `../gestion-employees/landing/`).
+- **CyberBrain** (carte 4, `demos.card4.*`) — le moteur d'audit de cybersécurité mentionné aussi dans
+  `services.card2.desc` (section Services), développé dans `../cyberbrain-v1` (landing page dans
+  `../cyberbrain-v1/landing/`).
+
+Ni l'un ni l'autre n'a d'URL publique stable pour l'instant (domaines/déploiements pas encore finalisés,
+voir leurs propres README/guides de déploiement) — d'où l'absence de lien direct depuis ce site. Une fois
+une URL stable disponible, l'ajouter en `href` sur le titre ou un bouton de la carte correspondante.
+La carte CyberBrain n'a pas de vidéo (`data-video-src=""`) faute d'enregistrement existant ; en ajouter
+un si disponible.
+
 ## À personnaliser avant mise en ligne
 
 - **Coordonnées** (`index.html`, section `#contact`) : email, téléphone, adresse — actuellement des placeholders.
