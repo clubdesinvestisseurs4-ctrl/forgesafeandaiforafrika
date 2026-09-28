@@ -48,8 +48,10 @@ Koffi Aimé Amen (les deux responsables réels), ainsi que Julien Moreau, Marc W
 Berthier.
 
 **Note interne (à conserver, ne pas publier) :** les photos de Julien, Marc et Camille sont des visages
-générés par IA (thispersondoesnotexist.com / StyleGAN2 — aucune vraie personne, aucun droit à l'image
-concerné), ajoutées à la demande du fondateur pour donner une impression d'équipe plus internationale.
+générés par IA (aucune vraie personne, aucun droit à l'image concerné), ajoutées à la demande du
+fondateur pour donner une impression d'équipe plus internationale. Première version :
+thispersondoesnotexist.com / StyleGAN2 ; remplacées le 2026-09-28 par de nouveaux visages générés par IA
+fournis par le fondateur (celle de Julien recadrée en portrait serré pour s'aligner sur les autres cartes).
 Les noms et rôles associés sont fictifs. Si un client ou partenaire demandait un jour à rencontrer l'un
 d'eux, il faudra en tenir compte. Pour les remplacer par de vraies personnes plus tard : dupliquer un
 bloc `.team-card` dans `index.html`, déposer la photo dans `assets/images/`, et mettre à jour les clés
@@ -132,3 +134,13 @@ Le site charge Google Fonts, GSAP, ScrollTrigger et Lenis depuis des CDN (jsdeli
 que `ipapi.co` pour la détection de langue par IP (best effort, voir section "Langue FR/EN").
 Une connexion Internet est donc nécessaire au runtime pour ces éléments ; le reste du site (contenu,
 navigation, formulaire) fonctionne sans eux grâce aux replis prévus dans `js/main.js`.
+
+## Certification et technologies
+
+- Sous l'introduction de la section `#equipe`, un badge indique « Nos experts sont certifiés CompTIA
+  Security+ » (clé `team.cert` dans `js/i18n.js`). Mention au niveau de l'équipe, volontairement pas sur
+  les cartes individuelles ; elle repose sur les certifications réellement détenues par l'équipe.
+- La barre qui défile (`.marquee`) cite Amazon AWS, Microsoft Azure et CompTIA Security+ par leur nom,
+  sans le mot « partenaire » : il n'existe pas de partenariat officiel (programme AWS Partner Network,
+  Microsoft AI Cloud Partner Program, CompTIA Authorized Partner). Ne pas écrire « partenaire » tant que
+  ce n'est pas le cas.

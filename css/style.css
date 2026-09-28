@@ -758,6 +758,8 @@ section { position: relative; padding: 120px 0; }
   filter: grayscale(0);
 }
 
+.team-cert { margin: -36px 0 44px; }
+
 .about-infra { margin-top: 32px; }
 .about-infra-label {
   font-size: 0.78rem;
