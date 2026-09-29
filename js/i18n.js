@@ -6,8 +6,8 @@
 
   const dict = {
     fr: {
-      "meta.title": "ForgeSafe & AI for Africa | Systèmes de gestion, Cybersécurité, Consultance digitale",
-      "meta.description": "ForgeSafe & AI for Africa accompagne les entreprises africaines avec des systèmes de gestion d'activités, des audits de cybersécurité et de la consultance digitale sur mesure.",
+      "meta.title": "ForgeSafe | Systèmes de gestion, Cybersécurité, Consultance digitale",
+      "meta.description": "ForgeSafe accompagne les entreprises africaines avec des systèmes de gestion d'activités, des audits de cybersécurité et de la consultance digitale sur mesure.",
 
       "nav.services": "Services",
       "nav.demos": "Démonstrations",
@@ -22,7 +22,7 @@
       "hero.title.l1": "Nous bâtissons les systèmes",
       "hero.title.l2": "numériques qui font avancer",
       "hero.title.l3": "l'Afrique.",
-      "hero.lead": "ForgeSafe & AI for Africa conçoit vos outils de gestion, sécurise votre infrastructure et vous accompagne dans votre transformation digitale. Pas de solution toute faite : on part de ce qui existe déjà chez vous.",
+      "hero.lead": "ForgeSafe conçoit vos outils de gestion, sécurise votre infrastructure et vous accompagne dans votre transformation digitale. Pas de solution toute faite : on part de ce qui existe déjà chez vous.",
       "hero.cta.primary": "Voir nos démonstrations",
       "hero.cta.secondary": "Demander un audit gratuit",
       "hero.stat1": "pôles d'expertise",
@@ -74,7 +74,7 @@
       "demos.playAria": "Lire la démonstration vidéo",
       "demos.soonAria": "Vidéo bientôt disponible",
 
-      "about.eyebrow": "Pourquoi ForgeSafe & AI",
+      "about.eyebrow": "Pourquoi ForgeSafe",
       "about.title": "Une expertise technique, pensée pour le terrain africain",
       "about.p": "On mélange ingénierie logicielle, sécurité et connaissance du terrain pour livrer des outils que les équipes utilisent vraiment au quotidien, pas des maquettes qui prennent la poussière. Connexion qui coupe, équipes sur plusieurs sites, besoins qui changent en cours de route : c'est notre quotidien, alors on conçoit pour ça dès le départ.",
       "about.point1.title": "Sur mesure",
@@ -86,7 +86,7 @@
       "about.infra.label": "Notre infrastructure tourne sur",
 
       "team.eyebrow": "L'équipe",
-      "team.title": "Les personnes derrière ForgeSafe & AI",
+      "team.title": "Les personnes derrière ForgeSafe",
       "team.lead": "Une équipe restreinte, directement impliquée dans chaque projet, de la conception au déploiement.",
       "team.cert": "Nos experts sont certifiés CompTIA Security+",
       "team.antony.role": "Responsable Projet",
@@ -124,12 +124,13 @@
       "contact.form.errorRequired": "Merci de remplir tous les champs requis.",
       "contact.form.success": "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.",
 
-      "footer.rights": "Tous droits réservés."
+      "footer.rights": "Tous droits réservés.",
+      "footer.uk_registered": "ForgeSafe Security & Digital Solutions LTD est une société enregistrée en Angleterre et au Pays de Galles."
     },
 
     en: {
-      "meta.title": "ForgeSafe & AI for Africa | Management Systems, Cybersecurity, Digital Consulting",
-      "meta.description": "ForgeSafe & AI for Africa helps African businesses with tailor-made management systems, cybersecurity audits, and digital consulting.",
+      "meta.title": "ForgeSafe | Management Systems, Cybersecurity, Digital Consulting",
+      "meta.description": "ForgeSafe helps African businesses with tailor-made management systems, cybersecurity audits, and digital consulting.",
 
       "nav.services": "Services",
       "nav.demos": "Demos",
@@ -144,7 +145,7 @@
       "hero.title.l1": "We're building the digital",
       "hero.title.l2": "systems that move Africa",
       "hero.title.l3": "forward.",
-      "hero.lead": "ForgeSafe & AI for Africa designs your management tools, secures your infrastructure, and supports your digital transformation. No cookie-cutter fixes. We start from what you already have in place.",
+      "hero.lead": "ForgeSafe designs your management tools, secures your infrastructure, and supports your digital transformation. No cookie-cutter fixes. We start from what you already have in place.",
       "hero.cta.primary": "See our demos",
       "hero.cta.secondary": "Request a free audit",
       "hero.stat1": "areas of expertise",
@@ -196,7 +197,7 @@
       "demos.playAria": "Play the demo video",
       "demos.soonAria": "Video coming soon",
 
-      "about.eyebrow": "Why ForgeSafe & AI",
+      "about.eyebrow": "Why ForgeSafe",
       "about.title": "Technical expertise, built for the realities on the ground",
       "about.p": "We combine software engineering, security and on-the-ground know-how to ship tools teams actually use every day, not mockups gathering dust. Patchy connectivity, teams spread across sites, needs that shift mid-project. That's our everyday, so we design for it from day one.",
       "about.point1.title": "Tailor-made",
@@ -208,7 +209,7 @@
       "about.infra.label": "Our infrastructure runs on",
 
       "team.eyebrow": "The team",
-      "team.title": "The people behind ForgeSafe & AI",
+      "team.title": "The people behind ForgeSafe",
       "team.lead": "A small team, hands-on in every project, from design to deployment.",
       "team.cert": "Our experts are CompTIA Security+ certified",
       "team.antony.role": "Project Lead",
@@ -246,7 +247,8 @@
       "contact.form.errorRequired": "Please fill in all required fields.",
       "contact.form.success": "Thanks, your message is ready. Hook up a sending service to actually deliver it.",
 
-      "footer.rights": "All rights reserved."
+      "footer.rights": "All rights reserved.",
+      "footer.uk_registered": "ForgeSafe Security & Digital Solutions LTD is a company registered in England and Wales."
     }
   };
 

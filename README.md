@@ -1,4 +1,4 @@
-# ForgeSafe & AI for Africa — site vitrine
+# ForgeSafe Security & Digital Solutions LTD — site vitrine
 
 Site vitrine one-page (HTML/CSS/JS statique, sans build) présentant les trois pôles
 d'activité : systèmes de gestion, cybersécurité, consultance digitale.
