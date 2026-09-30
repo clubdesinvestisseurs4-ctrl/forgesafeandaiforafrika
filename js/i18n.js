@@ -125,7 +125,7 @@
       "contact.form.success": "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.",
 
       "footer.rights": "Tous droits réservés.",
-      "footer.uk_registered": "ForgeSafe Security & Digital Solutions LTD est une société enregistrée en Angleterre et au Pays de Galles."
+      "footer.uk_registered": "ForgeSafe Security & Digital Solutions LTD est une société enregistrée et basée au Royaume-Uni (Angleterre et Pays de Galles)."
     },
 
     en: {
@@ -248,7 +248,7 @@
       "contact.form.success": "Thanks, your message is ready. Hook up a sending service to actually deliver it.",
 
       "footer.rights": "All rights reserved.",
-      "footer.uk_registered": "ForgeSafe Security & Digital Solutions LTD is a company registered in England and Wales."
+      "footer.uk_registered": "ForgeSafe Security & Digital Solutions LTD is a company registered and based in the United Kingdom (England and Wales)."
     }
   };
 
