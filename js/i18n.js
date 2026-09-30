@@ -83,7 +83,7 @@
       "about.point2.desc": "La cybersécurité n'est pas une option ajoutée après coup, mais une base du projet.",
       "about.point3.title": "Accompagnement continu",
       "about.point3.desc": "Formation, suivi et évolutions après le déploiement.",
-      "about.infra.label": "Notre infrastructure tourne sur",
+      "about.infra.label": "Propulsé par",
 
       "team.eyebrow": "L'équipe",
       "team.title": "Les personnes derrière ForgeSafe",
@@ -206,7 +206,7 @@
       "about.point2.desc": "Cybersecurity isn't a bolt-on afterthought. It's part of the foundation.",
       "about.point3.title": "Ongoing support",
       "about.point3.desc": "Training, follow-up and updates after launch.",
-      "about.infra.label": "Our infrastructure runs on",
+      "about.infra.label": "Powered by",
 
       "team.eyebrow": "The team",
       "team.title": "The people behind ForgeSafe",
