@@ -7,7 +7,7 @@
   const dict = {
     fr: {
       "meta.title": "ForgeSafe | Systèmes de gestion, Cybersécurité, Consultance digitale",
-      "meta.description": "ForgeSafe accompagne les entreprises africaines avec des systèmes de gestion d'activités, des audits de cybersécurité et de la consultance digitale sur mesure.",
+      "meta.description": "ForgeSafe accompagne les entreprises avec des systèmes de gestion d'activités, des audits de cybersécurité et de la consultance digitale sur mesure.",
 
       "nav.services": "Services",
       "nav.demos": "Démonstrations",
@@ -21,7 +21,7 @@
       "hero.eyebrow": "gestion · cybersécurité · ia · consultance",
       "hero.title.l1": "Nous bâtissons les systèmes",
       "hero.title.l2": "numériques qui font avancer",
-      "hero.title.l3": "l'Afrique.",
+      "hero.title.l3": "votre activité.",
       "hero.lead": "ForgeSafe conçoit vos outils de gestion, sécurise votre infrastructure et vous accompagne dans votre transformation digitale. Pas de solution toute faite : on part de ce qui existe déjà chez vous.",
       "hero.cta.primary": "Voir nos démonstrations",
       "hero.cta.secondary": "Demander un audit gratuit",
@@ -75,7 +75,7 @@
       "demos.soonAria": "Vidéo bientôt disponible",
 
       "about.eyebrow": "Pourquoi ForgeSafe",
-      "about.title": "Une expertise technique, pensée pour le terrain africain",
+      "about.title": "Une expertise technique, pensée pour des environnements exigeants",
       "about.p": "On mélange ingénierie logicielle, sécurité et connaissance du terrain pour livrer des outils que les équipes utilisent vraiment au quotidien, pas des maquettes qui prennent la poussière. Connexion qui coupe, équipes sur plusieurs sites, besoins qui changent en cours de route : c'est notre quotidien, alors on conçoit pour ça dès le départ.",
       "about.point1.title": "Sur mesure",
       "about.point1.desc": "Chaque solution est conçue autour de vos processus réels, pas l'inverse.",
@@ -96,7 +96,7 @@
       "team.koffi.desc": "Architecture technique et supervision du développement.",
       "team.koffi.alt": "Koffi Aimé Amen, Responsable Ingénierie",
       "team.julien.role": "Direction Commerciale & Partenariats",
-      "team.julien.desc": "Développe nos partenariats à l'international et accompagne les clients hors d'Afrique de l'Ouest.",
+      "team.julien.desc": "Développe nos partenariats à l'international et accompagne nos clients à travers le monde.",
       "team.julien.alt": "Julien Moreau, Direction Commerciale & Partenariats",
       "team.marc.role": "Conseiller Cybersécurité",
       "team.marc.desc": "Apporte un regard extérieur sur nos audits et nos méthodologies de sécurité.",
@@ -111,7 +111,7 @@
       "contact.label.email": "Email",
       "contact.label.phone": "Téléphone",
       "contact.label.location": "Localisation",
-      "contact.location.value": "Abidjan, Côte d'Ivoire. On intervient dans toute l'Afrique de l'Ouest",
+      "contact.location.value": "Abidjan, Côte d'Ivoire — société enregistrée au Royaume-Uni",
       "contact.form.name": "Nom complet",
       "contact.form.email": "Email",
       "contact.form.service": "Service souhaité",
@@ -130,7 +130,7 @@
 
     en: {
       "meta.title": "ForgeSafe | Management Systems, Cybersecurity, Digital Consulting",
-      "meta.description": "ForgeSafe helps African businesses with tailor-made management systems, cybersecurity audits, and digital consulting.",
+      "meta.description": "ForgeSafe helps businesses with tailor-made management systems, cybersecurity audits, and digital consulting.",
 
       "nav.services": "Services",
       "nav.demos": "Demos",
@@ -143,8 +143,8 @@
 
       "hero.eyebrow": "management · cybersecurity · ai · consulting",
       "hero.title.l1": "We're building the digital",
-      "hero.title.l2": "systems that move Africa",
-      "hero.title.l3": "forward.",
+      "hero.title.l2": "systems that move",
+      "hero.title.l3": "your business forward.",
       "hero.lead": "ForgeSafe designs your management tools, secures your infrastructure, and supports your digital transformation. No cookie-cutter fixes. We start from what you already have in place.",
       "hero.cta.primary": "See our demos",
       "hero.cta.secondary": "Request a free audit",
@@ -198,7 +198,7 @@
       "demos.soonAria": "Video coming soon",
 
       "about.eyebrow": "Why ForgeSafe",
-      "about.title": "Technical expertise, built for the realities on the ground",
+      "about.title": "Technical expertise, built for demanding environments",
       "about.p": "We combine software engineering, security and on-the-ground know-how to ship tools teams actually use every day, not mockups gathering dust. Patchy connectivity, teams spread across sites, needs that shift mid-project. That's our everyday, so we design for it from day one.",
       "about.point1.title": "Tailor-made",
       "about.point1.desc": "Every solution is built around your actual processes, not the other way around.",
@@ -219,7 +219,7 @@
       "team.koffi.desc": "Technical architecture and development oversight.",
       "team.koffi.alt": "Koffi Aimé Amen, Engineering Lead",
       "team.julien.role": "Business Development & Partnerships",
-      "team.julien.desc": "Builds our international partnerships and supports clients outside West Africa.",
+      "team.julien.desc": "Builds our international partnerships and supports clients around the world.",
       "team.julien.alt": "Julien Moreau, Business Development & Partnerships",
       "team.marc.role": "Cybersecurity Advisor",
       "team.marc.desc": "Brings an outside perspective to our audits and security methodology.",
@@ -234,7 +234,7 @@
       "contact.label.email": "Email",
       "contact.label.phone": "Phone",
       "contact.label.location": "Location",
-      "contact.location.value": "Abidjan, Côte d'Ivoire. We work across West Africa",
+      "contact.location.value": "Abidjan, Côte d'Ivoire — a company registered in the United Kingdom",
       "contact.form.name": "Full name",
       "contact.form.email": "Email",
       "contact.form.service": "Service you need",
