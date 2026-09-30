@@ -758,7 +758,8 @@ section { position: relative; padding: 120px 0; }
   filter: grayscale(0);
 }
 
-.team-cert { margin: -36px 0 44px; }
+.team-cert { margin: 4px 0 44px; }
+.team-cert .about-infra-label { margin-bottom: 12px; }
 
 .about-infra { margin-top: 36px; }
 .about-infra-label {
