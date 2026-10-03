@@ -718,46 +718,6 @@ section { position: relative; padding: 120px 0; }
 }
 @keyframes spin { to { transform: rotate(360deg); } }
 
-/* =============== TEAM =============== */
-.team-grid {
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  gap: 28px;
-  max-width: 760px;
-  margin-top: 8px;
-}
-
-.team-card {
-  position: relative;
-  background: var(--bg-card);
-  border: 1px solid var(--border);
-  border-radius: var(--radius);
-  overflow: hidden;
-  transition: transform 0.3s var(--ease), border-color 0.3s var(--ease), box-shadow 0.3s var(--ease);
-}
-.team-card:hover {
-  transform: translateY(-6px);
-  border-color: rgba(var(--accent-rgb), 0.4);
-  box-shadow: 0 20px 40px -20px rgba(0,0,0,0.5);
-}
-
-.team-photo {
-  aspect-ratio: 4 / 5;
-  overflow: hidden;
-  background: #dfe3e9;
-}
-.team-photo img {
-  width: 100%; height: 100%;
-  object-fit: cover;
-  object-position: center 15%;
-  filter: grayscale(0.15);
-  transition: transform 0.5s ease, filter 0.3s ease;
-}
-.team-card:hover .team-photo img {
-  transform: scale(1.04);
-  filter: grayscale(0);
-}
-
 .team-cert { margin: 4px 0 44px; }
 .team-cert .about-infra-label { margin-bottom: 12px; }
 
@@ -804,18 +764,6 @@ section { position: relative; padding: 120px 0; }
   letter-spacing: 0.01em;
   color: var(--text-dim);
 }
-
-.team-body { padding: 24px 26px 28px; }
-.team-body h3 { font-size: 1.1rem; margin-bottom: 6px; }
-.team-role {
-  color: var(--accent);
-  font-size: 0.82rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 12px;
-}
-.team-desc { color: var(--text-dim); font-size: 0.9rem; }
 
 /* =============== CONTACT =============== */
 .contact-inner {
@@ -945,8 +893,7 @@ section { position: relative; padding: 120px 0; }
   .main-nav.open a { padding: 14px 0; border-bottom: 1px solid var(--border); }
 
   section { padding: 84px 0; }
-  .services-grid, .demos-grid, .team-grid { grid-template-columns: 1fr; }
-  .team-grid { max-width: 420px; }
+  .services-grid, .demos-grid { grid-template-columns: 1fr; }
   .hero-stats { gap: 32px; }
   .footer-inner { justify-content: center; text-align: center; }
   .brand-footer { margin-right: 0; }

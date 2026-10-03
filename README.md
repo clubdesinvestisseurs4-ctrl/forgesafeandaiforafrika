@@ -6,7 +6,7 @@ d'activité : systèmes de gestion, cybersécurité, consultance digitale.
 ## Structure
 
 ```
-index.html          Page unique (header, hero, marquee, services, démos, à propos, équipe, contact, footer)
+index.html          Page unique (header, hero, marquee, services, démos, à propos, contact, footer)
 css/style.css        Design system (couleurs, composants, responsive)
 js/main.js           Lenis smooth scroll, GSAP ScrollTrigger reveals, curseur custom, boutons magnétiques,
                      spotlight cartes, nav mobile, compteurs animés, lecture vidéo lazy, formulaire
@@ -43,19 +43,20 @@ réutiliser les anciens fichiers.
 
 ## Équipe
 
-La section `#equipe` affiche 5 membres avec leurs photos, nom et rôle : Antony Georges Demozart et
-Koffi Aimé Amen (les deux responsables réels), ainsi que Julien Moreau, Marc Willemsen et Camille
-Berthier.
+**Section retirée le 2026-10-03** à la demande du fondateur. Le site n'affiche plus de photos ni de
+fiches individuelles de l'équipe ; seul le badge de certifications (`team.cert_label`, déplacé dans la
+section « À propos ») subsiste.
 
-**Note interne (à conserver, ne pas publier) :** les photos de Julien, Marc et Camille sont des visages
-générés par IA (aucune vraie personne, aucun droit à l'image concerné), ajoutées à la demande du
-fondateur pour donner une impression d'équipe plus internationale. Première version :
-thispersondoesnotexist.com / StyleGAN2 ; remplacées le 2026-09-28 par de nouveaux visages générés par IA
-fournis par le fondateur (celle de Julien recadrée en portrait serré pour s'aligner sur les autres cartes).
-Les noms et rôles associés sont fictifs. Si un client ou partenaire demandait un jour à rencontrer l'un
-d'eux, il faudra en tenir compte. Pour les remplacer par de vraies personnes plus tard : dupliquer un
-bloc `.team-card` dans `index.html`, déposer la photo dans `assets/images/`, et mettre à jour les clés
-`team.julien.*` / `team.marc.*` / `team.camille.*` dans `js/i18n.js` (voir section i18n plus bas).
+**Note interne (à conserver, ne pas publier) :** la section affichait auparavant 5 membres avec photos,
+nom et rôle : Antony Georges Demozart et Koffi Aimé Amen (les deux responsables réels), ainsi que Julien Moreau,
+Marc Willemsen et Camille Berthier. Les photos de Julien, Marc et Camille étaient des visages générés par
+IA (aucune vraie personne, aucun droit à l'image concerné), ajoutées à la demande du fondateur pour
+donner une impression d'équipe plus internationale. Première version : thispersondoesnotexist.com / StyleGAN2 ;
+remplacées le 2026-09-28 par de nouveaux visages générés par IA fournis par le fondateur. Les noms et
+rôles associés étaient fictifs. Les fichiers image (`assets/images/team-*.jpeg`) et les clés
+`team.julien.*` / `team.antony.*` / `team.marc.*` / `team.camille.*` / `team.koffi.*` n'ont pas été
+supprimés du disque, seulement retirés de `index.html` / `js/i18n.js` — à nettoyer si on est certain de
+ne jamais réintroduire la section.
 
 ## Produits maison (Kuwepo, CyberBrain)
 
@@ -77,14 +78,17 @@ un si disponible.
 
 ## À personnaliser avant mise en ligne
 
-- **Coordonnées** (`index.html`, section `#contact`) : email, téléphone, adresse — actuellement des placeholders.
+- **Coordonnées** (`index.html`, section `#contact`) : email réel renseigné (2026-10-03). Pas de
+  téléphone ni d'adresse affichés pour le moment (retirés à la demande du fondateur) ; à réintroduire si
+  besoin.
 - **Vidéos de démonstration** (`index.html`, section `#demos`) : chaque `.demo-media` a un attribut
   `data-video-src=""`. Renseignez-le avec l'URL du fichier vidéo (mp4 hébergé, ou adaptez `js/main.js`
   pour embarquer un iframe YouTube/Vimeo). Remplacez aussi les posters SVG dans `assets/` par de vraies
   captures d'écran.
 - **Formulaire de contact** (`js/main.js`) : la soumission est actuellement simulée côté client. Branchez
   un service comme Formspree, EmailJS, ou un endpoint backend maison pour recevoir réellement les messages.
-- **Réseaux sociaux** (footer) : liens `#` à remplacer par les vrais profils.
+- **Réseaux sociaux** (footer) : seul LinkedIn est affiché (lien réel renseigné le 2026-10-03). Twitter/X
+  et WhatsApp ont été retirés.
 
 ## Langue FR/EN
 
@@ -137,10 +141,9 @@ navigation, formulaire) fonctionne sans eux grâce aux replis prévus dans `js/m
 
 ## Certification et technologies
 
-- Sous l'introduction de la section `#equipe`, un badge indique « Nos experts sont certifiés CompTIA
-  Security+ » (clé `team.cert` dans `js/i18n.js`). Mention au niveau de l'équipe, volontairement pas sur
-  les cartes individuelles ; elle repose sur les certifications réellement détenues par l'équipe.
-- La barre qui défile (`.marquee`) cite Amazon AWS, Microsoft Azure et CompTIA Security+ par leur nom,
-  sans le mot « partenaire » : il n'existe pas de partenariat officiel (programme AWS Partner Network,
-  Microsoft AI Cloud Partner Program, CompTIA Authorized Partner). Ne pas écrire « partenaire » tant que
-  ce n'est pas le cas.
+- Dans la section « À propos », un badge indique « Nos experts sont certifiés » CompTIA / Microsoft /
+  Google (clé `team.cert_label` dans `js/i18n.js` — nom de clé conservé malgré le déplacement hors de la
+  section équipe, désormais supprimée). Ce sont des certifications réellement détenues par l'équipe.
+- Le bloc « Propulsé par » / `about.infra.label` (section À propos) montre Google Cloud, AWS, Microsoft et
+  Oracle par leur nom, sans le mot « partenaire » : il n'existe pas de partenariat officiel avec ces
+  entreprises. Ne pas écrire « partenaire » tant que ce n'est pas le cas.

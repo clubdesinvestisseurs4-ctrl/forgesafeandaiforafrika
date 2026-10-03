@@ -12,7 +12,6 @@
       "nav.services": "Services",
       "nav.demos": "Démonstrations",
       "nav.about": "À propos",
-      "nav.team": "Équipe",
       "nav.contact": "Contact",
       "nav.cta": "Discutons de votre projet",
       "nav.toggle.open": "Ouvrir le menu",
@@ -85,32 +84,12 @@
       "about.point3.desc": "Formation, suivi et évolutions après le déploiement.",
       "about.infra.label": "Propulsé par",
 
-      "team.eyebrow": "L'équipe",
-      "team.title": "Les personnes derrière ForgeSafe",
-      "team.lead": "Une équipe restreinte, directement impliquée dans chaque projet, de la conception au déploiement.",
       "team.cert_label": "Nos experts sont certifiés",
-      "team.antony.role": "Responsable Projet",
-      "team.antony.desc": "Pilotage des projets clients, de la conception au déploiement.",
-      "team.antony.alt": "Antony Georges Demozart, Responsable Projet",
-      "team.koffi.role": "Responsable Ingénierie",
-      "team.koffi.desc": "Architecture technique et supervision du développement.",
-      "team.koffi.alt": "Koffi Aimé Amen, Responsable Ingénierie",
-      "team.julien.role": "Direction Commerciale & Partenariats",
-      "team.julien.desc": "Développe nos partenariats à l'international et accompagne nos clients à travers le monde.",
-      "team.julien.alt": "Julien Moreau, Direction Commerciale & Partenariats",
-      "team.marc.role": "Conseiller Cybersécurité",
-      "team.marc.desc": "Apporte un regard extérieur sur nos audits et nos méthodologies de sécurité.",
-      "team.marc.alt": "Marc Willemsen, Conseiller Cybersécurité",
-      "team.camille.role": "Responsable IA & Data",
-      "team.camille.desc": "Pilote nos projets d'intelligence artificielle et l'exploitation des données clients.",
-      "team.camille.alt": "Camille Berthier, Responsable IA & Data",
 
       "contact.eyebrow": "Parlons de votre projet",
       "contact.title": "Prêt à sécuriser et digitaliser votre activité ?",
       "contact.lead": "Décrivez-nous votre besoin en quelques lignes, on revient vers vous rapidement, généralement sous 24 à 48h.",
       "contact.label.email": "Email",
-      "contact.label.location": "Localisation",
-      "contact.location.value": "128 City Road, London, EC1V 2NX, Royaume-Uni",
       "contact.form.name": "Nom complet",
       "contact.form.email": "Email",
       "contact.form.service": "Service souhaité",
@@ -123,8 +102,7 @@
       "contact.form.errorRequired": "Merci de remplir tous les champs requis.",
       "contact.form.success": "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.",
 
-      "footer.rights": "Tous droits réservés.",
-      "footer.uk_registered": "ForgeSafe Security & Digital Solutions LTD est une société enregistrée et basée au Royaume-Uni (Angleterre et Pays de Galles)."
+      "footer.rights": "Tous droits réservés."
     },
 
     en: {
@@ -134,7 +112,6 @@
       "nav.services": "Services",
       "nav.demos": "Demos",
       "nav.about": "About",
-      "nav.team": "Team",
       "nav.contact": "Contact",
       "nav.cta": "Let's talk about your project",
       "nav.toggle.open": "Open menu",
@@ -170,7 +147,7 @@
       "services.card2.desc": "Find your vulnerabilities before someone else does. We run on CyberBrain, our own audit engine: rule-based detection, a score explained in plain language, down to reading your source code.",
       "services.card2.li1": "Risk audit & mapping",
       "services.card2.li2": "Tailored security systems",
-      "services.card2.li3": "Prioritized recommendations & support",
+      "services.card2.li3": "Prioritised recommendations & support",
       "services.card3.title": "Digital consulting",
       "services.card3.desc": "A complete, consistent digital presence: website, content, internal tools. We help structure your communication and processes so you gain efficiency and credibility.",
       "services.card3.li1": "Website creation & digital presence",
@@ -207,32 +184,12 @@
       "about.point3.desc": "Training, follow-up and updates after launch.",
       "about.infra.label": "Powered by",
 
-      "team.eyebrow": "The team",
-      "team.title": "The people behind ForgeSafe",
-      "team.lead": "A small team, hands-on in every project, from design to deployment.",
       "team.cert_label": "Our experts are certified in",
-      "team.antony.role": "Project Lead",
-      "team.antony.desc": "Runs client projects from design through deployment.",
-      "team.antony.alt": "Antony Georges Demozart, Project Lead",
-      "team.koffi.role": "Engineering Lead",
-      "team.koffi.desc": "Technical architecture and development oversight.",
-      "team.koffi.alt": "Koffi Aimé Amen, Engineering Lead",
-      "team.julien.role": "Business Development & Partnerships",
-      "team.julien.desc": "Builds our international partnerships and supports clients around the world.",
-      "team.julien.alt": "Julien Moreau, Business Development & Partnerships",
-      "team.marc.role": "Cybersecurity Advisor",
-      "team.marc.desc": "Brings an outside perspective to our audits and security methodology.",
-      "team.marc.alt": "Marc Willemsen, Cybersecurity Advisor",
-      "team.camille.role": "AI & Data Lead",
-      "team.camille.desc": "Leads our AI projects and how we put client data to work.",
-      "team.camille.alt": "Camille Berthier, AI & Data Lead",
 
       "contact.eyebrow": "Let's talk about your project",
-      "contact.title": "Ready to secure and digitize your business?",
+      "contact.title": "Ready to secure and digitise your business?",
       "contact.lead": "Tell us what you need in a few lines, we'll get back to you quickly, usually within 24 to 48 hours.",
       "contact.label.email": "Email",
-      "contact.label.location": "Location",
-      "contact.location.value": "128 City Road, London, EC1V 2NX, United Kingdom",
       "contact.form.name": "Full name",
       "contact.form.email": "Email",
       "contact.form.service": "Service you need",
@@ -245,8 +202,7 @@
       "contact.form.errorRequired": "Please fill in all required fields.",
       "contact.form.success": "Thanks, your message is ready. Hook up a sending service to actually deliver it.",
 
-      "footer.rights": "All rights reserved.",
-      "footer.uk_registered": "ForgeSafe Security & Digital Solutions LTD is a company registered and based in the United Kingdom (England and Wales)."
+      "footer.rights": "All rights reserved."
     }
   };
 

@@ -52,7 +52,7 @@
   });
 
   /* ---------- Scroll reveal (GSAP if available, IO fallback) ---------- */
-  const gridSelector = ".services-grid, .demos-grid, .team-grid";
+  const gridSelector = ".services-grid, .demos-grid";
   const revealEls = Array.from(document.querySelectorAll(".reveal")).filter(
     (el) => !el.closest(gridSelector)
   );
@@ -106,24 +106,6 @@
           stagger: 0.14,
           ease: "power3.out",
           scrollTrigger: { trigger: demosGrid, start: "top 85%" },
-        }
-      );
-    }
-
-    /* Team: portraits wipe into view */
-    const teamGrid = document.querySelector(".team-grid");
-    if (teamGrid) {
-      gsap.fromTo(
-        teamGrid.children,
-        { opacity: 0, y: 24, clipPath: "inset(100% 0% 0% 0%)" },
-        {
-          opacity: 1,
-          y: 0,
-          clipPath: "inset(0% 0% 0% 0%)",
-          duration: 0.9,
-          stagger: 0.16,
-          ease: "power2.out",
-          scrollTrigger: { trigger: teamGrid, start: "top 85%" },
         }
       );
     }
