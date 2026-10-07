@@ -13,6 +13,7 @@
       "nav.demos": "Démonstrations",
       "nav.about": "À propos",
       "nav.contact": "Contact",
+      "nav.careers": "Carrières",
       "nav.cta": "Discutons de votre projet",
       "nav.toggle.open": "Ouvrir le menu",
       "nav.toggle.close": "Fermer le menu",
@@ -102,7 +103,43 @@
       "contact.form.errorRequired": "Merci de remplir tous les champs requis.",
       "contact.form.success": "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.",
 
-      "footer.rights": "Tous droits réservés."
+      "footer.rights": "Tous droits réservés.",
+
+      "careers.meta.title": "Carrières — ForgeSafe Security & Digital Solutions",
+      "careers.meta.description": "Rejoignez ForgeSafe Security & Digital Solutions. Découvrez notre culture, notre façon de recruter, et envoyez-nous une candidature spontanée.",
+
+      "careers.hero.eyebrow": "Carrières",
+      "careers.hero.title": "Construisez avec nous les outils numériques de demain.",
+      "careers.hero.lead": "Nous sommes une équipe restreinte, directement impliquée dans chaque projet, de la conception au déploiement chez le client. Si cette façon de travailler vous parle, nous voulons vous rencontrer, même sans poste ouvert aujourd'hui.",
+
+      "careers.why.eyebrow": "Notre culture",
+      "careers.why.title": "Pourquoi nous rejoindre",
+      "careers.why.card1.title": "Un impact concret et visible",
+      "careers.why.card1.desc": "Nos outils tournent en production chez nos clients dès les premières semaines. Vous voyez directement l'effet de votre travail sur le terrain, pas seulement dans un backlog.",
+      "careers.why.card2.title": "Une équipe restreinte, responsabilisante",
+      "careers.why.card2.desc": "Pas de hiérarchie lourde. Chacun porte ses projets de bout en bout, échange directement avec les clients, et voit ses décisions compter réellement.",
+      "careers.why.card3.title": "Des sujets variés, un terrain exigeant",
+      "careers.why.card3.desc": "Gestion d'activités, cybersécurité, IA, consultance : vous touchez à plusieurs disciplines, sur des infrastructures où la connectivité et le contexte imposent de vraies contraintes d'ingénierie.",
+
+      "careers.jobs.eyebrow": "Opportunités",
+      "careers.jobs.title": "Postes ouverts",
+      "careers.jobs.lead": "L'état actuel, en toute transparence.",
+      "careers.jobs.empty.title": "Aucun poste ouvert pour le moment",
+      "careers.jobs.empty.desc": "Notre équipe est encore petite et nous recrutons rarement, mais toujours avec soin. Quand un poste s'ouvrira, il sera publié ici en premier. En attendant, une candidature spontanée reste le meilleur moyen d'entrer en contact avec nous.",
+      "careers.jobs.empty.cta1": "Envoyer une candidature spontanée",
+      "careers.jobs.empty.cta2": "Nous contacter",
+      "careers.jobs.empty.note": "Joignez un bref message sur ce que vous aimeriez construire avec nous, et votre CV ou portfolio.",
+
+      "careers.process.eyebrow": "À quoi s'attendre",
+      "careers.process.title": "Comment se déroule un recrutement",
+      "careers.process.step1.title": "1. Candidature spontanée",
+      "careers.process.step1.desc": "Vous nous écrivez directement : qui vous êtes, ce que vous avez construit, ce qui vous intéresse chez nous.",
+      "careers.process.step2.title": "2. Échange découverte",
+      "careers.process.step2.desc": "Un appel ou une rencontre informelle pour comprendre vos attentes et vous présenter nos projets en cours.",
+      "careers.process.step3.title": "3. Mise en situation",
+      "careers.process.step3.desc": "Un cas concret, proche de nos projets réels, pas un test théorique déconnecté du terrain.",
+      "careers.process.step4.title": "4. Décision rapide",
+      "careers.process.step4.desc": "Nous revenons vers vous avec une réponse claire, dans un délai raisonnable, qu'il y ait un poste ouvert ou non."
     },
 
     en: {
@@ -113,6 +150,7 @@
       "nav.demos": "Demos",
       "nav.about": "About",
       "nav.contact": "Contact",
+      "nav.careers": "Careers",
       "nav.cta": "Let's talk about your project",
       "nav.toggle.open": "Open menu",
       "nav.toggle.close": "Close menu",
@@ -202,7 +240,43 @@
       "contact.form.errorRequired": "Please fill in all required fields.",
       "contact.form.success": "Thanks, your message is ready. Hook up a sending service to actually deliver it.",
 
-      "footer.rights": "All rights reserved."
+      "footer.rights": "All rights reserved.",
+
+      "careers.meta.title": "Careers — ForgeSafe Security & Digital Solutions",
+      "careers.meta.description": "Join ForgeSafe Security & Digital Solutions. Learn about our culture, how we hire, and send us a spontaneous application.",
+
+      "careers.hero.eyebrow": "Careers",
+      "careers.hero.title": "Build tomorrow's digital tools with us.",
+      "careers.hero.lead": "We're a small team, directly involved in every project, from design to deployment at the client's site. If that way of working speaks to you, we want to meet you, even without an open role today.",
+
+      "careers.why.eyebrow": "Our culture",
+      "careers.why.title": "Why join us",
+      "careers.why.card1.title": "Real, visible impact",
+      "careers.why.card1.desc": "Our tools run in production at client sites within weeks. You see the effect of your work directly, not just in a backlog.",
+      "careers.why.card2.title": "A small, empowering team",
+      "careers.why.card2.desc": "No heavy hierarchy. Everyone owns their projects end to end, talks directly with clients, and sees their decisions genuinely count.",
+      "careers.why.card3.title": "Varied work, demanding terrain",
+      "careers.why.card3.desc": "Business management, cybersecurity, AI, consulting: you touch several disciplines, on infrastructure where connectivity and context impose real engineering constraints.",
+
+      "careers.jobs.eyebrow": "Opportunities",
+      "careers.jobs.title": "Open positions",
+      "careers.jobs.lead": "The current state, in full transparency.",
+      "careers.jobs.empty.title": "No open positions right now",
+      "careers.jobs.empty.desc": "Our team is still small and we hire rarely, but always carefully. When a role opens, it'll be posted here first. In the meantime, a spontaneous application is the best way to get on our radar.",
+      "careers.jobs.empty.cta1": "Send a spontaneous application",
+      "careers.jobs.empty.cta2": "Contact us",
+      "careers.jobs.empty.note": "Include a short note on what you'd like to build with us, and your CV or portfolio.",
+
+      "careers.process.eyebrow": "What to expect",
+      "careers.process.title": "How a hire usually goes",
+      "careers.process.step1.title": "1. Spontaneous application",
+      "careers.process.step1.desc": "You write to us directly: who you are, what you've built, what interests you about us.",
+      "careers.process.step2.title": "2. Discovery call",
+      "careers.process.step2.desc": "An informal call or meeting to understand what you're looking for and walk you through our current projects.",
+      "careers.process.step3.title": "3. Practical case",
+      "careers.process.step3.desc": "A concrete case close to our real projects, not a theoretical test disconnected from the field.",
+      "careers.process.step4.title": "4. Fast decision",
+      "careers.process.step4.desc": "We get back to you with a clear answer within a reasonable timeframe, whether or not a role is open."
     }
   };
 

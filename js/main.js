@@ -47,9 +47,11 @@
 
   /* ---------- Hero headline reveal ---------- */
   const heroTitle = document.querySelector(".hero-title");
-  requestAnimationFrame(() => {
-    setTimeout(() => heroTitle.classList.add("is-revealed"), 50);
-  });
+  if (heroTitle) {
+    requestAnimationFrame(() => {
+      setTimeout(() => heroTitle.classList.add("is-revealed"), 50);
+    });
+  }
 
   /* ---------- Scroll reveal (GSAP if available, IO fallback) ---------- */
   const gridSelector = ".services-grid, .demos-grid";
@@ -272,16 +274,18 @@
   /* ---------- Contact form (client-side placeholder) ---------- */
   const contactForm = document.getElementById("contactForm");
   const formNote = document.getElementById("formNote");
-  contactForm.addEventListener("submit", (e) => {
-    e.preventDefault();
-    if (!contactForm.checkValidity()) {
-      formNote.textContent = t("contact.form.errorRequired", "Merci de remplir tous les champs requis.");
-      return;
-    }
-    // NOTE: brancher ici un service d'envoi (Formspree, EmailJS, backend maison, ...).
-    formNote.textContent = t("contact.form.success", "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.");
-    contactForm.reset();
-  });
+  if (contactForm) {
+    contactForm.addEventListener("submit", (e) => {
+      e.preventDefault();
+      if (!contactForm.checkValidity()) {
+        formNote.textContent = t("contact.form.errorRequired", "Merci de remplir tous les champs requis.");
+        return;
+      }
+      // NOTE: brancher ici un service d'envoi (Formspree, EmailJS, backend maison, ...).
+      formNote.textContent = t("contact.form.success", "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.");
+      contactForm.reset();
+    });
+  }
 
   /* ---------- Footer year ---------- */
   document.getElementById("year").textContent = new Date().getFullYear();

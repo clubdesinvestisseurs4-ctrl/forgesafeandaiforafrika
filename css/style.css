@@ -868,6 +868,43 @@ section { position: relative; padding: 120px 0; }
   .orbit-ring, .scroll-cue span { animation: none; }
 }
 
+/* =============== CAREERS =============== */
+.section-alt { background: var(--bg-alt); }
+
+.main-nav a.is-current { color: var(--text); }
+.main-nav a.is-current::after { width: 100%; }
+
+.page-hero { padding: 180px 0 90px; text-align: center; }
+.page-hero .section-eyebrow { justify-content: center; }
+.page-hero .section-title { max-width: 26ch; margin: 0 auto 20px; }
+.page-hero .section-lead { max-width: 58ch; margin: 0 auto; }
+
+.process-list { max-width: 720px; margin: 0 auto; }
+
+.jobs-empty {
+  max-width: 640px;
+  margin: 0 auto;
+  text-align: center;
+  background: var(--bg-card);
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  padding: 56px 40px;
+}
+.jobs-empty-icon {
+  width: 72px; height: 72px;
+  margin: 0 auto 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  background: linear-gradient(135deg, rgba(var(--accent-rgb),0.14), rgba(var(--accent2-rgb),0.1));
+  color: var(--accent);
+}
+.jobs-empty h3 { font-size: 1.3rem; margin-bottom: 14px; }
+.jobs-empty p { color: var(--text-dim); max-width: 46ch; margin: 0 auto 26px; }
+.jobs-empty-actions { display: flex; gap: 14px; justify-content: center; flex-wrap: wrap; }
+.jobs-empty-note { margin-top: 24px; font-size: 0.82rem; color: var(--text-faint); }
+
 /* =============== RESPONSIVE =============== */
 @media (max-width: 980px) {
   .services-grid, .demos-grid { grid-template-columns: repeat(2, 1fr); }

@@ -6,7 +6,9 @@ d'activité : systèmes de gestion, cybersécurité, consultance digitale.
 ## Structure
 
 ```
-index.html          Page unique (header, hero, marquee, services, démos, à propos, contact, footer)
+index.html          Page d'accueil (header, hero, marquee, services, démos, à propos, contact, footer)
+carrieres.html       Page carrières : culture, postes ouverts (vide pour l'instant, candidature
+                     spontanée en CTA), processus de recrutement. Mêmes header/footer/i18n qu'index.html.
 css/style.css        Design system (couleurs, composants, responsive)
 js/main.js           Lenis smooth scroll, GSAP ScrollTrigger reveals, curseur custom, boutons magnétiques,
                      spotlight cartes, nav mobile, compteurs animés, lecture vidéo lazy, formulaire
