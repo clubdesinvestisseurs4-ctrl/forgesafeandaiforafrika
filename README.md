@@ -87,8 +87,11 @@ un si disponible.
   `data-video-src=""`. Renseignez-le avec l'URL du fichier vidéo (mp4 hébergé, ou adaptez `js/main.js`
   pour embarquer un iframe YouTube/Vimeo). Remplacez aussi les posters SVG dans `assets/` par de vraies
   captures d'écran.
-- **Formulaire de contact** (`js/main.js`) : la soumission est actuellement simulée côté client. Branchez
-  un service comme Formspree, EmailJS, ou un endpoint backend maison pour recevoir réellement les messages.
+- **Formulaire de contact** (`js/main.js`) : envoyé en POST à `https://cyberbrain-api.onrender.com/public/contact`
+  (API du repo cyberbrain-v1), qui relaie la demande par Resend vers `enquiries@forgesafeds.org`
+  (variable Render `CONTACT_NOTIFICATION_EMAIL`), avec le prospect en Reply-To. Si l'API échoue, le
+  site ouvre un mailto pré-rempli vers la même adresse. L'origine du site doit figurer dans
+  `CORS_ALLOWED_ORIGINS` côté Render.
 - **Réseaux sociaux** (footer) : seul LinkedIn est affiché (lien réel renseigné le 2026-10-03). Twitter/X
   et WhatsApp ont été retirés.
 

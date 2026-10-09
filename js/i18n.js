@@ -101,7 +101,9 @@
       "contact.form.message": "Votre message",
       "contact.form.submit": "Envoyer la demande",
       "contact.form.errorRequired": "Merci de remplir tous les champs requis.",
-      "contact.form.success": "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.",
+      "contact.form.sending": "Envoi en cours…",
+      "contact.form.success": "Merci, votre demande a bien été envoyée. Nous revenons vers vous sous 24 à 48h.",
+      "contact.form.fallback": "L'envoi automatique n'a pas abouti : votre messagerie s'ouvre avec la demande pré-remplie, il vous suffit de l'envoyer.",
 
       "footer.rights": "Tous droits réservés.",
 
@@ -238,7 +240,9 @@
       "contact.form.message": "Your message",
       "contact.form.submit": "Send request",
       "contact.form.errorRequired": "Please fill in all required fields.",
-      "contact.form.success": "Thanks, your message is ready. Hook up a sending service to actually deliver it.",
+      "contact.form.sending": "Sending…",
+      "contact.form.success": "Thanks, your request has been sent. We'll get back to you within 24 to 48 hours.",
+      "contact.form.fallback": "Automatic sending didn't go through: your email app is opening with the request pre-filled, just hit send.",
 
       "footer.rights": "All rights reserved.",
 

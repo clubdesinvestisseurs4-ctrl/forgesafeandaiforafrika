@@ -412,6 +412,11 @@
           <label for="message" data-i18n="contact.form.message">Votre message</label>
           <textarea id="message" name="message" rows="4" required></textarea>
         </div>
+        <!-- Honeypot anti-spam : invisible pour les humains, seuls les robots le remplissent. -->
+        <div class="form-row" aria-hidden="true" style="position: absolute; left: -9999px;">
+          <label for="website">Site web</label>
+          <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
+        </div>
         <button type="submit" class="btn btn-primary btn-block magnetic"><span data-i18n="contact.form.submit">Envoyer la demande</span></button>
         <p class="form-note" id="formNote" role="status"></p>
       </form>

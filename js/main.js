@@ -271,19 +271,62 @@
     });
   });
 
-  /* ---------- Contact form (client-side placeholder) ---------- */
+  /* ---------- Contact form ---------- */
+  // Envoyé via l'API CyberBrain (Render), qui relaie vers enquiries@ par Resend. Si l'API ne
+  // répond pas, on bascule sur un mailto pré-rempli pour ne jamais perdre une demande.
+  const CONTACT_API_URL = "https://cyberbrain-api.onrender.com/public/contact";
+  const CONTACT_EMAIL = "enquiries@forgesafeds.org";
+  // L'offre gratuite Render met l'API en veille : le premier appel peut prendre ~1 min.
+  const CONTACT_TIMEOUT_MS = 70000;
   const contactForm = document.getElementById("contactForm");
   const formNote = document.getElementById("formNote");
   if (contactForm) {
-    contactForm.addEventListener("submit", (e) => {
+    const submitBtn = contactForm.querySelector('button[type="submit"]');
+
+    const field = (id) => contactForm.elements.namedItem(id);
+
+    const openMailto = (data) => {
+      const subject = `Demande de contact — ${data.service}`;
+      const body = `${data.message}\n\n${data.name}\n${data.email}`;
+      window.location.href = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    };
+
+    contactForm.addEventListener("submit", async (e) => {
       e.preventDefault();
       if (!contactForm.checkValidity()) {
         formNote.textContent = t("contact.form.errorRequired", "Merci de remplir tous les champs requis.");
         return;
       }
-      // NOTE: brancher ici un service d'envoi (Formspree, EmailJS, backend maison, ...).
-      formNote.textContent = t("contact.form.success", "Merci, votre message a bien été préparé. Configurez un service d'envoi pour le transmettre réellement.");
-      contactForm.reset();
+      const serviceSelect = field("service");
+      const data = {
+        name: field("name").value.trim(),
+        email: field("email").value.trim(),
+        service: serviceSelect.options[serviceSelect.selectedIndex].text,
+        message: field("message").value.trim(),
+        website: field("website").value,
+      };
+
+      submitBtn.disabled = true;
+      formNote.textContent = t("contact.form.sending", "Envoi en cours…");
+      const controller = new AbortController();
+      const timer = setTimeout(() => controller.abort(), CONTACT_TIMEOUT_MS);
+      try {
+        const res = await fetch(CONTACT_API_URL, {
+          method: "POST",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(data),
+          signal: controller.signal,
+        });
+        if (!res.ok) throw new Error(`HTTP ${res.status}`);
+        formNote.textContent = t("contact.form.success", "Merci, votre demande a bien été envoyée. Nous revenons vers vous sous 24 à 48h.");
+        contactForm.reset();
+      } catch (err) {
+        formNote.textContent = t("contact.form.fallback", "L'envoi automatique n'a pas abouti : votre messagerie s'ouvre avec la demande pré-remplie, il vous suffit de l'envoyer.");
+        openMailto(data);
+      } finally {
+        clearTimeout(timer);
+        submitBtn.disabled = false;
+      }
     });
   }
 
