@@ -5,18 +5,6 @@
   const hasGSAP = typeof window.gsap !== "undefined";
   if (hasGSAP && window.ScrollTrigger) gsap.registerPlugin(ScrollTrigger);
 
-  /* ---------- Smooth scroll (Lenis) ---------- */
-  let lenis = null;
-  if (!prefersReducedMotion && typeof window.Lenis !== "undefined") {
-    lenis = new Lenis({ duration: 1.1, smoothWheel: true });
-    const raf = (time) => {
-      lenis.raf(time);
-      if (hasGSAP && window.ScrollTrigger) ScrollTrigger.update();
-      requestAnimationFrame(raf);
-    };
-    requestAnimationFrame(raf);
-  }
-
   /* ---------- Header scroll state + progress bar ---------- */
   const header = document.getElementById("header");
   const progressBar = document.getElementById("progressBar");

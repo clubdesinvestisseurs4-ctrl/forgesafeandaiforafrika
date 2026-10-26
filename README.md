@@ -10,7 +10,7 @@ index.html          Page d'accueil (header, hero, marquee, services, démos, à 
 carrieres.html       Page carrières : culture, postes ouverts (vide pour l'instant, candidature
                      spontanée en CTA), processus de recrutement. Mêmes header/footer/i18n qu'index.html.
 css/style.css        Design system (couleurs, composants, responsive)
-js/main.js           Lenis smooth scroll, GSAP ScrollTrigger reveals, curseur custom, boutons magnétiques,
+js/main.js           GSAP ScrollTrigger reveals, curseur custom, boutons magnétiques,
                      spotlight cartes, nav mobile, compteurs animés, lecture vidéo lazy, formulaire
 js/i18n.js           Système bilingue FR/EN (voir section "Langue FR/EN" ci-dessous)
 assets/              Favicons (générés depuis le logo) + posters placeholder pour les démos
@@ -107,7 +107,7 @@ Détection automatique au premier chargement (dans cet ordre) :
 2. Langue du navigateur (`navigator.language`).
 3. Géolocalisation IP via l'API gratuite `ipapi.co` (pays anglophones : GB, US, CA, AU, NZ, IE) — best
    effort, timeout 2,5s, silencieux en cas d'échec (pas de clé API requise, mais dépendance à un service
-   tiers externe, comme les CDN GSAP/Lenis déjà utilisés par le site).
+   tiers externe, comme le CDN GSAP déjà utilisé par le site).
 4. Sinon, français par défaut.
 
 Pour ajouter/modifier un texte : éditer la valeur correspondante dans les deux blocs (`fr` et `en`) de
@@ -132,14 +132,15 @@ partenaire (ex. Microsoft for Startups, AWS Activate), sous peine de fausse publ
 - Palette dérivée du logo : fond quasi-noir, accent or clair (`#e8c572`) + bronze doré (`#c99e48`),
   cohérente avec l'écusson navy/or de la marque.
 - Polices : Space Grotesk (titres), Inter (texte).
-- Animations : Lenis (scroll fluide) + GSAP ScrollTrigger (apparitions en cascade), avec repli automatique
-  en JS natif (IntersectionObserver) si les CDN GSAP/Lenis ne chargent pas. Curseur personnalisé, boutons
+- Animations : GSAP ScrollTrigger (apparitions en cascade), avec repli automatique en JS natif
+  (IntersectionObserver) si le CDN GSAP ne charge pas. Le défilement est volontairement natif : Lenis
+  (scroll "lissé") a été retiré le 2026-10-26 car il retardait la molette sur ordinateur. Curseur personnalisé, boutons
   magnétiques et effet spotlight sur les cartes actifs uniquement sur pointeur fin (desktop).
 - Images/vidéos en lazy loading natif (`loading="lazy"`, vidéo chargée seulement au clic sur "lecture").
 
 ## Dépendances externes (CDN)
 
-Le site charge Google Fonts, GSAP, ScrollTrigger et Lenis depuis des CDN (jsdelivr/Google Fonts), ainsi
+Le site charge Google Fonts, GSAP et ScrollTrigger depuis des CDN (jsdelivr/Google Fonts), ainsi
 que `ipapi.co` pour la détection de langue par IP (best effort, voir section "Langue FR/EN").
 Une connexion Internet est donc nécessaire au runtime pour ces éléments ; le reste du site (contenu,
 navigation, formulaire) fonctionne sans eux grâce aux replis prévus dans `js/main.js`.
