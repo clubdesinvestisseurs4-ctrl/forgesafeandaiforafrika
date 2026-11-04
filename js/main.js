@@ -292,6 +292,9 @@
         service: serviceSelect.options[serviceSelect.selectedIndex].text,
         message: field("message").value.trim(),
         website: field("website").value,
+        // Indique à l'API que la demande vient du site ForgeSafe (et non de la page
+        // CyberBrain) : l'e-mail reçu est alors signé ForgeSafe et marqué « Site ForgeSafe ».
+        source: "forgesafe",
       };
 
       submitBtn.disabled = true;
