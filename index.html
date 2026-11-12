@@ -4,11 +4,12 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title data-i18n="meta.title">ForgeSafe | Systèmes de gestion, Cybersécurité, Consultance digitale</title>
-<meta name="description" content="ForgeSafe accompagne les entreprises avec des systèmes de gestion d'activités, des audits de cybersécurité et de la consultance digitale sur mesure." data-i18n-attr="content:meta.description">
-<meta property="og:title" content="ForgeSafe">
-<meta property="og:description" content="Systèmes de gestion, audit de cybersécurité et consultance digitale pour les entreprises.">
+<meta name="description" content="ForgeSafe conçoit des logiciels de gestion qui tournent sur le terrain et audite leur sécurité avec CyberBrain, son propre moteur. Pointage, restauration, comptabilité : déjà en production chez nos clients." data-i18n-attr="content:meta.description">
+<meta property="og:title" content="ForgeSafe — Des outils de gestion qui tournent vraiment, et qui restent sûrs">
+<meta property="og:description" content="Logiciels de gestion, audit de cybersécurité et conseil digital. Déjà en production chez nos clients.">
 <meta property="og:type" content="website">
-<meta property="og:image" content="assets/images/logo-full.png">
+<meta property="og:url" content="https://forgesafeds.org/">
+<meta property="og:image" content="https://forgesafeds.org/assets/posters/cookafrica.jpg">
 <link rel="icon" type="image/png" href="assets/favicon-32.png">
 <link rel="apple-touch-icon" href="assets/favicon-180.png">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,10 +19,8 @@
 </head>
 <body>
 
-<div class="noise-overlay" aria-hidden="true"></div>
+<a class="skip-link" href="#top" data-i18n="a11y.skip">Aller au contenu</a>
 <div class="progress-bar" id="progressBar" aria-hidden="true"></div>
-<div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
-<div class="cursor-ring" id="cursorRing" aria-hidden="true"></div>
 
 <!-- ================= HEADER ================= -->
 <header class="site-header" id="header">
@@ -35,13 +34,14 @@
 
     <nav class="main-nav" id="main-nav">
       <a href="#services" data-nav data-i18n="nav.services">Services</a>
-      <a href="#demos" data-nav data-i18n="nav.demos">Démonstrations</a>
+      <a href="#demos" data-nav data-i18n="nav.demos">Réalisations</a>
       <a href="#apropos" data-nav data-i18n="nav.about">À propos</a>
       <a href="carrieres.html" data-nav data-i18n="nav.careers">Carrières</a>
       <a href="#contact" data-nav data-i18n="nav.contact">Contact</a>
     </nav>
 
-    <a href="#contact" class="btn btn-primary btn-sm nav-cta magnetic"><span data-i18n="nav.cta">Discutons de votre projet</span></a>
+    <a href="#contact" class="btn btn-primary btn-sm nav-cta"><span data-i18n="nav.cta">Discutons de votre projet</span></a>
+    <a href="https://calendly.com/georges-forgesafeds/forgesafeds-15-min-call-appel-15-min" class="btn btn-primary btn-sm nav-book" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-i18n="cta.book">Réserver 15 minutes</span></a>
 
     <div class="lang-switch" id="langSwitch" role="group" aria-label="Choix de la langue / Language switch">
       <button type="button" class="lang-btn is-active" data-lang="fr" aria-pressed="true">FR</button>
@@ -60,236 +60,193 @@
   <section class="hero">
     <div class="hero-bg" aria-hidden="true">
       <div class="grid-lines" id="gridLines"></div>
-      <canvas class="hero-globe" id="heroGlobe"></canvas>
-      <svg class="circuit" viewBox="0 0 1200 800" preserveAspectRatio="none">
-        <path class="circuit-path" d="M0 120 H260 V280 H520 V90 H820 V340" />
-        <path class="circuit-path circuit-path-2" d="M1200 640 H940 V420 H700 V700 H360" />
-        <circle class="circuit-node" cx="260" cy="120" r="4"/>
-        <circle class="circuit-node" cx="520" cy="280" r="4"/>
-        <circle class="circuit-node" cx="820" cy="90" r="4"/>
-        <circle class="circuit-node" cx="940" cy="640" r="4"/>
-        <circle class="circuit-node" cx="700" cy="420" r="4"/>
-      </svg>
-      <div class="glow glow-1"></div>
-      <div class="glow glow-2"></div>
     </div>
 
-    <div class="container hero-inner">
-      <p class="eyebrow reveal"><span class="eyebrow-prompt">&gt;</span> <span data-i18n="hero.eyebrow">gestion &middot; cybersécurité &middot; ia &middot; consultance</span><span class="eyebrow-cursor">_</span></p>
-      <h1 class="hero-title">
-        <span class="line"><span class="line-inner reveal-line" data-i18n="hero.title.l1">Nous bâtissons les systèmes</span></span>
-        <span class="line"><span class="line-inner reveal-line" data-i18n="hero.title.l2">numériques qui font avancer</span></span>
-        <span class="line"><span class="line-inner reveal-line"><span class="text-gradient" data-i18n="hero.title.l3">votre activité.</span></span></span>
-      </h1>
-      <p class="hero-lead reveal" data-i18n="hero.lead">
-        ForgeSafe conçoit vos outils de gestion, sécurise votre infrastructure
-        et vous accompagne dans votre transformation digitale. Pas de solution toute faite : on part de
-        ce qui existe déjà chez vous.
-      </p>
-      <div class="hero-actions reveal">
-        <a href="#demos" class="btn btn-primary magnetic"><span data-i18n="hero.cta.primary">Voir nos démonstrations</span></a>
-        <a href="#contact" class="btn btn-outline magnetic"><span data-i18n="hero.cta.secondary">Demander un audit gratuit</span></a>
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <p class="hero-kicker"><span class="kicker-dot" aria-hidden="true"></span><span data-i18n="hero.eyebrow">Logiciels de gestion · Cybersécurité · Conseil digital</span></p>
+        <h1 class="hero-title">
+          <span class="line"><span class="line-inner" data-i18n="hero.title.l1">Des outils de gestion</span></span>
+          <span class="line"><span class="line-inner" data-i18n="hero.title.l2">qui tournent vraiment,</span></span>
+          <span class="line"><span class="line-inner"><span class="text-accent" data-i18n="hero.title.l3">et qui restent sûrs.</span></span></span>
+        </h1>
+        <p class="hero-lead" data-i18n="hero.lead">Nous concevons vos applications métiers (pointage, restauration, comptabilité) et nous auditons leur sécurité avec CyberBrain, notre propre moteur. Déjà en production chez nos clients.</p>
+        <div class="hero-actions">
+          <a href="#demos" class="btn btn-primary"><span data-i18n="hero.cta.primary">Voir nos réalisations</span></a>
+          <a href="https://calendly.com/georges-forgesafeds/forgesafeds-15-min-call-appel-15-min" class="btn btn-outline" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-i18n="cta.book">Réserver 15 minutes</span></a>
+        </div>
+        <a class="hero-cyber" href="https://cyberbrain-landing.vercel.app/fr" data-i18n-attr="href:links.cyberbrain" target="_blank" rel="noopener">
+          <svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 4 5v6c0 5 3.4 9.3 8 11 4.6-1.7 8-6 8-11V5l-8-3Z" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+          <span data-i18n="hero.cyber">Tester la sécurité de votre site gratuitement</span>
+          <span aria-hidden="true">→</span>
+        </a>
       </div>
 
-      <div class="hero-stats reveal">
-        <div class="stat">
-          <span class="stat-num" data-count="3">0</span>
-          <span class="stat-label" data-i18n="hero.stat1">pôles d'expertise</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num" data-count="100" data-suffix="%">0</span>
-          <span class="stat-label" data-i18n="hero.stat2">solutions sur mesure</span>
-        </div>
-        <div class="stat">
-          <span class="stat-num" data-count="24" data-suffix="/7">0</span>
-          <span class="stat-label" data-i18n="hero.stat3">support &amp; suivi</span>
-        </div>
+      <div class="hero-visual" aria-hidden="true">
+        <figure class="shot shot-main">
+          <img src="assets/posters/cookafrica.jpg" alt="" width="1280" height="720" fetchpriority="high">
+          <figcaption class="shot-tag"><span class="live-dot"></span><span data-i18n="hero.tag1">CookAfrica · en production</span></figcaption>
+        </figure>
+        <figure class="shot shot-phone">
+          <img src="assets/posters/kuwepo.jpg" alt="" width="1280" height="720">
+          <figcaption class="shot-tag" data-i18n="hero.tag2">Kuwepo · pointage anti-fraude</figcaption>
+        </figure>
+        <figure class="shot shot-cyber">
+          <img src="assets/posters/cyberbrain.jpg" alt="" width="1280" height="720">
+          <figcaption class="shot-tag" data-i18n="hero.tag3">CyberBrain · audit en clair</figcaption>
+        </figure>
       </div>
-    </div>
-
-    <div class="scroll-cue reveal" aria-hidden="true">
-      <span></span>
-      <p data-i18n="hero.scroll">Défiler</p>
     </div>
   </section>
 
-  <!-- ================= MARQUEE ================= -->
-  <div class="marquee" aria-hidden="true">
-    <div class="marquee-track">
-      <span data-i18n="marquee.1">Gestion d'activités</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.2">Cybersécurité</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.3">Intelligence artificielle</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.4">Consultance digitale</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.5">Audit &amp; conformité</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.6">Cloud &amp; automatisation</span><span class="dot">&bull;</span>
-      <span>Amazon AWS</span><span class="dot">&bull;</span>
-      <span>Microsoft</span><span class="dot">&bull;</span>
-      <span>CompTIA Security+</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.1">Gestion d'activités</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.2">Cybersécurité</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.3">Intelligence artificielle</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.4">Consultance digitale</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.5">Audit &amp; conformité</span><span class="dot">&bull;</span>
-      <span data-i18n="marquee.6">Cloud &amp; automatisation</span><span class="dot">&bull;</span>
-      <span>Amazon AWS</span><span class="dot">&bull;</span>
-      <span>Microsoft</span><span class="dot">&bull;</span>
-      <span>CompTIA Security+</span><span class="dot">&bull;</span>
+  <!-- ================= DÉJÀ LIVRÉ ================= -->
+  <section class="proof" aria-labelledby="proof-title">
+    <div class="container">
+      <p class="proof-title" id="proof-title" data-i18n="proof.title">Déjà livré, déjà utilisé</p>
+      <ul class="proof-list">
+        <li><strong>Kuwepo</strong><span data-i18n="proof.1">Pointage anti-fraude, déployé sur plusieurs sites</span></li>
+        <li><strong>CookAfrica</strong><span data-i18n="proof.2">Salle, cuisine, bar et caisse reliés, en production chaque jour</span></li>
+        <li><strong>ERP SYSCOHADA</strong><span data-i18n="proof.3">Comptabilité multi-société, consolidée automatiquement</span></li>
+        <li><strong>CyberBrain</strong><span data-i18n="proof.4">29 règles de détection, 13 chaînes d'attaque reconnues</span></li>
+      </ul>
     </div>
-  </div>
+  </section>
 
   <!-- ================= SERVICES ================= -->
   <section class="services" id="services">
     <div class="container">
       <p class="section-eyebrow reveal"><span class="section-index">01</span><span data-i18n="services.eyebrow">Nos expertises</span></p>
-      <h2 class="section-title reveal" data-i18n="services.title">Trois pôles, une seule ambition&nbsp;: votre performance</h2>
+      <h2 class="section-title reveal" data-i18n="services.title">Trois métiers, une même exigence : que ça marche, et que ça tienne.</h2>
+      <p class="section-lead reveal" data-i18n="services.lead">Nous construisons, nous sécurisons, nous accompagnons : un seul interlocuteur, du premier échange au suivi après le déploiement.</p>
 
       <div class="services-grid" id="servicesGrid">
 
-        <article class="service-card spotlight reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="40" height="40">
-              <rect x="6" y="10" width="36" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2"/>
-              <path d="M6 18 H42" stroke="currentColor" stroke-width="2"/>
-              <circle cx="12" cy="14" r="1.4" fill="currentColor"/>
-              <circle cx="17" cy="14" r="1.4" fill="currentColor"/>
-              <path d="M14 40 H34 M24 34 V40" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
-            </svg>
+        <article class="service-card reveal">
+          <div class="service-head">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="30" height="30">
+                <rect x="6" y="10" width="36" height="24" rx="2" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                <path d="M6 18 H42" stroke="currentColor" stroke-width="2.4"/>
+                <path d="M14 40 H34 M24 34 V40" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/>
+              </svg>
+            </div>
+            <span class="service-num">01</span>
           </div>
           <h3 data-i18n="services.card1.title">Systèmes de gestion d'activités</h3>
-          <p data-i18n="services.card1.desc">
-            Applications métiers et ERP conçus pour votre réalité&nbsp;: gestion sur place ou à distance,
-            multi-sites, multi-utilisateurs. De la prise de commande à la comptabilité, en passant par les stocks
-            et les ressources humaines.
-          </p>
+          <p data-i18n="services.card1.desc">Des applications métiers et ERP pensés pour votre réalité : gestion sur place ou à distance, plusieurs sites, plusieurs utilisateurs. De la prise de commande à la compta, en passant par les stocks et les RH.</p>
           <ul class="service-list">
             <li data-i18n="services.card1.li1">Applications métiers &amp; ERP sur mesure</li>
             <li data-i18n="services.card1.li2">Gestion multi-sites, en ligne ou hors-ligne</li>
             <li data-i18n="services.card1.li3">Tableaux de bord &amp; reporting en temps réel</li>
           </ul>
+          <a class="service-link" href="#demos"><span data-i18n="services.card1.link">Voir Kuwepo et CookAfrica</span> <span aria-hidden="true">→</span></a>
         </article>
 
-        <article class="service-card spotlight reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="40" height="40">
-              <path d="M24 4 L40 10 V22 C40 32 33 39 24 42 C15 39 8 32 8 22 V10 Z" fill="none" stroke="currentColor" stroke-width="2"/>
-              <path d="M17 23 L22 28 L32 17" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
+        <article class="service-card reveal">
+          <div class="service-head">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="30" height="30">
+                <path d="M24 4 L40 10 V22 C40 32 33 39 24 42 C15 39 8 32 8 22 V10 Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                <path d="M17 23 L22 28 L32 17" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </div>
+            <span class="service-num">02</span>
           </div>
           <h3 data-i18n="services.card2.title">Audit de cybersécurité</h3>
-          <p data-i18n="services.card2.desc">
-            Identifiez vos vulnérabilités avant qu'elles ne soient exploitées. On s'appuie sur CyberBrain,
-            notre propre moteur d'audit&nbsp;: détection par règles, score expliqué en langage clair,
-            jusqu'à la lecture de votre code source.
-          </p>
+          <p data-i18n="services.card2.desc">Identifiez vos vulnérabilités avant qu'elles ne soient exploitées. On s'appuie sur CyberBrain, notre propre moteur d'audit : détection par règles, score expliqué en langage clair, jusqu'à la lecture de votre code source.</p>
           <ul class="service-list">
             <li data-i18n="services.card2.li1">Audit &amp; cartographie des risques</li>
             <li data-i18n="services.card2.li2">Mise en place de systèmes de sécurité adaptés</li>
             <li data-i18n="services.card2.li3">Recommandations priorisées &amp; accompagnement</li>
           </ul>
+          <a class="service-link" href="https://cyberbrain-landing.vercel.app/fr" data-i18n-attr="href:links.cyberbrain" target="_blank" rel="noopener"><span data-i18n="services.card2.link">Scanner votre site gratuitement</span> <span aria-hidden="true">↗</span></a>
         </article>
 
-        <article class="service-card spotlight reveal">
-          <div class="service-icon" aria-hidden="true">
-            <svg viewBox="0 0 48 48" width="40" height="40">
-              <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
-              <path d="M24 6 C30 12 30 36 24 42 C18 36 18 12 24 6 Z" fill="none" stroke="currentColor" stroke-width="2"/>
-              <path d="M6 24 H42" stroke="currentColor" stroke-width="2"/>
-            </svg>
+        <article class="service-card reveal">
+          <div class="service-head">
+            <div class="service-icon" aria-hidden="true">
+              <svg viewBox="0 0 48 48" width="30" height="30">
+                <circle cx="24" cy="24" r="18" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                <path d="M24 6 C30 12 30 36 24 42 C18 36 18 12 24 6 Z" fill="none" stroke="currentColor" stroke-width="2.4"/>
+                <path d="M6 24 H42" stroke="currentColor" stroke-width="2.4"/>
+              </svg>
+            </div>
+            <span class="service-num">03</span>
           </div>
           <h3 data-i18n="services.card3.title">Consultance digitale</h3>
-          <p data-i18n="services.card3.desc">
-            Une présence digitale complète et cohérente&nbsp;: site web, contenu, outils internes. Nous vous
-            aidons à structurer votre communication et vos processus pour gagner en efficacité et en crédibilité.
-          </p>
+          <p data-i18n="services.card3.desc">Une présence digitale complète et cohérente : site web, contenu, outils internes. Nous vous aidons à structurer votre communication et vos processus pour gagner en efficacité et en crédibilité.</p>
           <ul class="service-list">
             <li data-i18n="services.card3.li1">Création de sites web &amp; présence digitale</li>
             <li data-i18n="services.card3.li2">Aide à la création de contenu</li>
             <li data-i18n="services.card3.li3">Mise en place de systèmes de gestion interne</li>
           </ul>
+          <a class="service-link" href="#contact"><span data-i18n="services.card3.link">Parler de votre présence digitale</span> <span aria-hidden="true">→</span></a>
         </article>
 
       </div>
     </div>
   </section>
 
-  <!-- ================= DEMOS ================= -->
+  <!-- ================= RÉALISATIONS ================= -->
   <section class="demos" id="demos">
     <div class="container">
       <p class="section-eyebrow reveal"><span class="section-index">02</span><span data-i18n="demos.eyebrow">En action</span></p>
-      <h2 class="section-title reveal" data-i18n="demos.title">Nos applications, en démonstration</h2>
-      <p class="section-lead reveal" data-i18n="demos.lead">
-        Un aperçu concret des systèmes de gestion que nous avons conçus et déployés pour nos clients.
-      </p>
+      <h2 class="section-title reveal" data-i18n="demos.title">Nos réalisations, filmées en conditions réelles</h2>
+      <p class="section-lead reveal" data-i18n="demos.lead">Un aperçu concret de ce qu'on construit : nos propres produits, et les systèmes livrés à nos clients.</p>
 
       <div class="demos-grid" id="demosGrid">
 
-        <article class="demo-card spotlight reveal">
-          <div class="demo-media" data-video-src="assets/data-video-src/demo3.mp4" data-poster="assets/placeholder-demo-1.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-1.svg" alt="Aperçu de la démonstration : Kuwepo, pointage et gestion RH anti-fraude" data-i18n-attr="alt:demos.card1.alt" loading="lazy" width="640" height="360">
+        <article class="demo-card demo-card--featured reveal">
+          <div class="demo-media" data-video-src="assets/data-video-src/demo3.mp4">
+            <img class="demo-poster" src="assets/posters/kuwepo.jpg" alt="Aperçu de la démonstration : Kuwepo, pointage et gestion RH anti-fraude" data-i18n-attr="alt:demos.card1.alt" loading="lazy" width="1280" height="720">
             <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo" data-i18n-attr="aria-label:demos.playAria">
               <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="demo-body">
-            <h3 data-i18n="demos.card1.title">Kuwepo&nbsp;: pointage &amp; RH anti-fraude</h3>
-            <p data-i18n="demos.card1.desc">
-              Fini les feuilles de présence papier&nbsp;: chaque employé pointe avec son téléphone, en croisant
-              QR du site, Wi-Fi de l'entreprise et reconnaissance faciale, impossible de pointer pour un
-              collègue absent. La paie se calcule automatiquement en fin de mois. C'est Kuwepo, notre propre
-              produit, déjà déployé sur plusieurs sites, pour plusieurs entreprises.
-            </p>
+            <span class="chip chip-gold" data-i18n="demos.tag1">Notre produit</span>
+            <h3 data-i18n="demos.card1.title">Kuwepo : pointage &amp; RH anti-fraude</h3>
+            <p data-i18n="demos.card1.desc">Fini les feuilles de présence papier : chaque employé pointe avec son téléphone, en croisant QR du site, Wi-Fi de l'entreprise et reconnaissance faciale, impossible de pointer pour un collègue absent. La paie se calcule automatiquement en fin de mois. C'est Kuwepo, notre propre produit, déjà déployé sur plusieurs sites, pour plusieurs entreprises.</p>
           </div>
         </article>
 
-        <article class="demo-card spotlight reveal">
-          <div class="demo-media" data-video-src="assets/data-video-src/demo2.mp4" data-poster="assets/placeholder-demo-2.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-2.svg" alt="Aperçu de la démonstration : ERP comptable multi-société" data-i18n-attr="alt:demos.card2.alt" loading="lazy" width="640" height="360">
+        <article class="demo-card reveal">
+          <div class="demo-media" data-video-src="assets/data-video-src/demo1.mp4">
+            <img class="demo-poster" src="assets/posters/cookafrica.jpg" alt="Aperçu de la démonstration : gestion de restaurant CookAfrica" data-i18n-attr="alt:demos.card3.alt" loading="lazy" width="1280" height="720">
             <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo" data-i18n-attr="aria-label:demos.playAria">
               <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="demo-body">
-            <h3 data-i18n="demos.card2.title">ERP comptable multi-société</h3>
-            <p data-i18n="demos.card2.desc">
-              Deux entreprises, une seule comptabilité normée SYSCOHADA. Journaux, balances et états financiers se
-              consolident automatiquement par société. Ce qui prenait des jours de rapprochement tient
-              désormais dans un tableau de bord.
-            </p>
-          </div>
-        </article>
-
-        <article class="demo-card spotlight reveal">
-          <div class="demo-media" data-video-src="assets/data-video-src/demo1.mp4" data-poster="assets/placeholder-demo-3.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-3.svg" alt="Aperçu de la démonstration : gestion de restaurant CookAfrica" data-i18n-attr="alt:demos.card3.alt" loading="lazy" width="640" height="360">
-            <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo" data-i18n-attr="aria-label:demos.playAria">
-              <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
-            </button>
-          </div>
-          <div class="demo-body">
+            <span class="chip chip-green" data-i18n="demos.tag3">En production</span>
             <h3 data-i18n="demos.card3.title">Gestion de restaurant pour CookAfrica</h3>
-            <p data-i18n="demos.card3.desc">
-              Une commande prise en salle arrive instantanément en cuisine et au bar, chaque poste facture sa part,
-              et tout se recoupe à la caisse sans ressaisie. C'est l'outil que CookAfrica utilise chaque jour en
-              production.
-            </p>
+            <p data-i18n="demos.card3.desc">Une commande prise en salle arrive instantanément en cuisine et au bar, chaque poste facture sa part, et tout se recoupe à la caisse sans ressaisie. C'est l'outil que CookAfrica utilise chaque jour en production.</p>
           </div>
         </article>
 
-        <article class="demo-card spotlight reveal">
-          <div class="demo-media" data-video-src="" data-poster="assets/placeholder-demo-4.svg">
-            <img class="demo-poster" src="assets/placeholder-demo-4.svg" alt="Aperçu de la démonstration : CyberBrain, moteur d'audit de cybersécurité" data-i18n-attr="alt:demos.card4.alt" loading="lazy" width="640" height="360">
+        <article class="demo-card reveal">
+          <div class="demo-media" data-video-src="assets/data-video-src/demo2.mp4">
+            <img class="demo-poster" src="assets/posters/erp.jpg" alt="Aperçu de la démonstration : ERP comptable multi-société" data-i18n-attr="alt:demos.card2.alt" loading="lazy" width="1280" height="720">
             <button class="play-btn" type="button" aria-label="Lire la démonstration vidéo" data-i18n-attr="aria-label:demos.playAria">
               <svg viewBox="0 0 24 24" width="22" height="22"><path d="M8 5 L19 12 L8 19 Z" fill="currentColor"/></svg>
             </button>
           </div>
           <div class="demo-body">
-            <h3 data-i18n="demos.card4.title">CyberBrain&nbsp;: l'audit qui explique le risque</h3>
-            <p data-i18n="demos.card4.desc">
-              CyberBrain scanne un site ou lit un dépôt de code, repère les failles techniques (en-têtes
-              manquants, secrets committés, dépendances vulnérables) et les relie en scénarios de risque
-              réels. Un score sur 100, calculé par des règles, jamais par l'IA&nbsp;: l'IA se charge
-              seulement de rédiger le résumé, en langage clair, pour un client non technique.
-            </p>
+            <span class="chip">SYSCOHADA</span>
+            <h3 data-i18n="demos.card2.title">ERP comptable multi-société</h3>
+            <p data-i18n="demos.card2.desc">Deux entreprises, une seule comptabilité normée SYSCOHADA. Journaux, balances et états financiers se consolident automatiquement par société. Ce qui prenait des jours de rapprochement tient désormais dans un tableau de bord.</p>
+          </div>
+        </article>
+
+        <article class="demo-card reveal">
+          <a class="demo-shot" href="https://cyberbrain-landing.vercel.app/fr" data-i18n-attr="href:links.cyberbrain" target="_blank" rel="noopener">
+            <img class="demo-poster" src="assets/posters/cyberbrain.jpg" alt="Aperçu de la démonstration : CyberBrain, moteur d'audit de cybersécurité" data-i18n-attr="alt:demos.card4.alt" loading="lazy" width="1280" height="720">
+          </a>
+          <div class="demo-body">
+            <span class="chip chip-navy" data-i18n="demos.tag4">Scan gratuit</span>
+            <h3 data-i18n="demos.card4.title">CyberBrain : l'audit qui explique le risque</h3>
+            <p data-i18n="demos.card4.desc">CyberBrain scanne un site ou lit un dépôt de code, repère les failles techniques (en-têtes manquants, secrets committés, dépendances vulnérables) et les relie en scénarios de risque réels. Un score sur 100, calculé par des règles, jamais par l'IA : l'IA se charge seulement de rédiger le résumé, en langage clair, pour un client non technique.</p>
+            <a class="service-link" href="https://cyberbrain-landing.vercel.app/fr" data-i18n-attr="href:links.cyberbrain" target="_blank" rel="noopener"><span data-i18n="demos.card4.cta">Essayer le scan gratuit</span> <span aria-hidden="true">↗</span></a>
           </div>
         </article>
 
@@ -299,76 +256,57 @@
     </div>
   </section>
 
-  <!-- ================= A PROPOS ================= -->
+  <!-- ================= À PROPOS ================= -->
   <section class="about" id="apropos">
-    <div class="container about-inner">
-      <div class="about-text reveal">
-        <p class="section-eyebrow"><span class="section-index">03</span><span data-i18n="about.eyebrow">Pourquoi ForgeSafe</span></p>
-        <h2 class="section-title" data-i18n="about.title">Une expertise technique, pensée pour des environnements exigeants</h2>
-        <p data-i18n="about.p">
-          On mélange ingénierie logicielle, sécurité et connaissance du terrain pour livrer des outils que
-          les équipes utilisent vraiment au quotidien, pas des maquettes qui prennent la poussière.
-          Connexion qui coupe, équipes sur plusieurs sites, besoins qui changent en cours de route&nbsp;:
-          c'est notre quotidien, alors on conçoit pour ça dès le départ.
-        </p>
-        <div class="about-points">
-          <div class="about-point">
-            <h4 data-i18n="about.point1.title">Sur mesure</h4>
-            <p data-i18n="about.point1.desc">Chaque solution est conçue autour de vos processus réels, pas l'inverse.</p>
-          </div>
-          <div class="about-point">
-            <h4 data-i18n="about.point2.title">Sécurité intégrée</h4>
-            <p data-i18n="about.point2.desc">La cybersécurité n'est pas une option ajoutée après coup, mais une base du projet.</p>
-          </div>
-          <div class="about-point">
-            <h4 data-i18n="about.point3.title">Accompagnement continu</h4>
-            <p data-i18n="about.point3.desc">Formation, suivi et évolutions après le déploiement.</p>
-          </div>
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-text reveal">
+          <p class="section-eyebrow"><span class="section-index">03</span><span data-i18n="about.eyebrow">Pourquoi ForgeSafe</span></p>
+          <h2 class="section-title" data-i18n="about.title">Une expertise technique, pensée pour des environnements exigeants</h2>
+          <p class="about-p" data-i18n="about.p">On mélange ingénierie logicielle, sécurité et connaissance du terrain pour livrer des outils que les équipes utilisent vraiment au quotidien, pas des maquettes qui prennent la poussière. Connexion qui coupe, équipes sur plusieurs sites, besoins qui changent en cours de route : c'est notre quotidien, alors on conçoit pour ça dès le départ.</p>
         </div>
-        <div class="about-infra">
-          <p class="about-infra-label" data-i18n="about.infra.label">Propulsé par</p>
-          <div class="infra-badges">
-            <span class="infra-badge infra-badge-lg">
-              <span class="infra-badge-text" style="color:#4285F4">Google Cloud</span>
-            </span>
-            <span class="infra-badge infra-badge-lg">
-              <svg width="24" height="24" viewBox="0 0 60 36" aria-hidden="true">
-                <path d="M6 28 C18 22 42 22 54 28" fill="none" stroke="#FF9900" stroke-width="3.5" stroke-linecap="round"/>
-                <path d="M50.5 25 L55 27.5 L51.5 32" fill="none" stroke="#FF9900" stroke-width="3.5" stroke-linecap="round" stroke-linejoin="round"/>
-              </svg>
-              <span class="infra-badge-text" style="color:#FF9900">AWS</span>
-            </span>
-            <span class="infra-badge infra-badge-lg">
-              <svg width="24" height="24" viewBox="0 0 23 23" aria-hidden="true"><rect x="1" y="1" width="10" height="10" fill="#f25022"/><rect x="12" y="1" width="10" height="10" fill="#7fba00"/><rect x="1" y="12" width="10" height="10" fill="#00a4ef"/><rect x="12" y="12" width="10" height="10" fill="#ffb900"/></svg>
-              <span class="infra-badge-text">Microsoft</span>
-            </span>
-            <span class="infra-badge infra-badge-lg">
-              <span class="infra-badge-text" style="color:#C74634">ORACLE</span>
-            </span>
+        <div class="about-points reveal">
+          <div class="about-point">
+            <span class="about-point-n">01</span>
+            <div>
+              <h3 data-i18n="about.point1.title">Sur mesure</h3>
+              <p data-i18n="about.point1.desc">Chaque solution est conçue autour de vos processus réels, pas l'inverse.</p>
+            </div>
           </div>
-        </div>
-        <div class="team-cert reveal">
-          <p class="about-infra-label" data-i18n="team.cert_label">Nos experts sont certifiés</p>
-          <div class="infra-badges">
-            <span class="infra-badge infra-badge-lg">
-              <svg width="24" height="24" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L20 5 V11 C20 16 16.5 20 12 22 C7.5 20 4 16 4 11 V5 Z" fill="none" stroke="#c99e48" stroke-width="1.6"/><path d="M8.5 12 L11 14.5 L15.5 9.5" fill="none" stroke="#c99e48" stroke-width="1.6"/></svg>
-              <span class="infra-badge-text">CompTIA</span>
-            </span>
-            <span class="infra-badge infra-badge-lg">
-              <svg width="24" height="24" viewBox="0 0 23 23" aria-hidden="true"><rect x="1" y="1" width="10" height="10" fill="#f25022"/><rect x="12" y="1" width="10" height="10" fill="#7fba00"/><rect x="1" y="12" width="10" height="10" fill="#00a4ef"/><rect x="12" y="12" width="10" height="10" fill="#ffb900"/></svg>
-              <span class="infra-badge-text">Microsoft</span>
-            </span>
-            <span class="infra-badge infra-badge-lg">
-              <span class="infra-badge-text" style="color:#4285F4">Google</span>
-            </span>
+          <div class="about-point">
+            <span class="about-point-n">02</span>
+            <div>
+              <h3 data-i18n="about.point2.title">Sécurité intégrée</h3>
+              <p data-i18n="about.point2.desc">La cybersécurité n'est pas une option ajoutée après coup, mais une base du projet.</p>
+            </div>
+          </div>
+          <div class="about-point">
+            <span class="about-point-n">03</span>
+            <div>
+              <h3 data-i18n="about.point3.title">Accompagnement continu</h3>
+              <p data-i18n="about.point3.desc">Formation, suivi et évolutions après le déploiement.</p>
+            </div>
           </div>
         </div>
       </div>
-      <div class="about-visual reveal" aria-hidden="true">
-        <div class="orbit-card">
-          <div class="orbit-ring"></div>
-          <div class="orbit-ring orbit-ring-2"></div>
-          <div class="orbit-dot"></div>
+
+      <div class="trust reveal">
+        <div class="trust-group">
+          <p class="trust-label" data-i18n="about.infra.label">Propulsé par</p>
+          <ul class="trust-logos">
+            <li style="color:#4285F4">Google Cloud</li>
+            <li style="color:#E68A00">AWS</li>
+            <li><svg width="16" height="16" viewBox="0 0 23 23" aria-hidden="true"><rect x="1" y="1" width="10" height="10" fill="#f25022"/><rect x="12" y="1" width="10" height="10" fill="#7fba00"/><rect x="1" y="12" width="10" height="10" fill="#00a4ef"/><rect x="12" y="12" width="10" height="10" fill="#ffb900"/></svg>Microsoft</li>
+            <li style="color:#C74634">ORACLE</li>
+          </ul>
+        </div>
+        <div class="trust-group">
+          <p class="trust-label" data-i18n="team.cert_label">Nos experts sont certifiés</p>
+          <ul class="trust-logos">
+            <li><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 2 L20 5 V11 C20 16 16.5 20 12 22 C7.5 20 4 16 4 11 V5 Z" fill="none" stroke="#a57a26" stroke-width="2"/><path d="M8.5 12 L11 14.5 L15.5 9.5" fill="none" stroke="#a57a26" stroke-width="2"/></svg>CompTIA</li>
+            <li><svg width="16" height="16" viewBox="0 0 23 23" aria-hidden="true"><rect x="1" y="1" width="10" height="10" fill="#f25022"/><rect x="12" y="1" width="10" height="10" fill="#7fba00"/><rect x="1" y="12" width="10" height="10" fill="#00a4ef"/><rect x="12" y="12" width="10" height="10" fill="#ffb900"/></svg>Microsoft</li>
+            <li style="color:#4285F4">Google</li>
+          </ul>
         </div>
       </div>
     </div>
@@ -379,12 +317,14 @@
     <div class="container contact-inner">
       <div class="contact-text reveal">
         <p class="section-eyebrow"><span class="section-index">04</span><span data-i18n="contact.eyebrow">Parlons de votre projet</span></p>
-        <h2 class="section-title" data-i18n="contact.title">Prêt à sécuriser et digitaliser votre activité&nbsp;?</h2>
-        <p data-i18n="contact.lead">Décrivez-nous votre besoin en quelques lignes, on revient vers vous rapidement, généralement sous 24 à 48h.</p>
+        <h2 class="section-title" data-i18n="contact.title">Prêt à sécuriser et digitaliser votre activité ?</h2>
+        <p class="contact-lead" data-i18n="contact.lead">Décrivez-nous votre besoin en quelques lignes, on revient vers vous rapidement, généralement sous 24 à 48h.</p>
+
+        <a href="https://calendly.com/georges-forgesafeds/forgesafeds-15-min-call-appel-15-min" class="btn btn-navy" target="_blank" rel="noopener"><svg width="16" height="16" viewBox="0 0 24 24" aria-hidden="true"><rect x="3" y="5" width="18" height="16" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M3 10h18M8 3v4M16 3v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg><span data-i18n="cta.book">Réserver 15 minutes</span></a>
 
         <ul class="contact-info">
           <li>
-            <span class="contact-label" data-i18n="contact.label.email">Email</span>
+            <span class="contact-label" data-i18n="contact.or">Ou écrivez-nous directement</span>
             <a href="mailto:enquiries@forgesafeds.org">enquiries@forgesafeds.org</a>
           </li>
         </ul>
@@ -417,7 +357,7 @@
           <label for="website">Site web</label>
           <input type="text" id="website" name="website" tabindex="-1" autocomplete="off">
         </div>
-        <button type="submit" class="btn btn-primary btn-block magnetic"><span data-i18n="contact.form.submit">Envoyer la demande</span></button>
+        <button type="submit" class="btn btn-primary btn-block"><span data-i18n="contact.form.submit">Envoyer la demande</span></button>
         <p class="form-note" id="formNote" role="status"></p>
       </form>
     </div>
@@ -436,7 +376,7 @@
     </a>
     <nav class="footer-nav">
       <a href="#services" data-i18n="nav.services">Services</a>
-      <a href="#demos" data-i18n="nav.demos">Démonstrations</a>
+      <a href="#demos" data-i18n="nav.demos">Réalisations</a>
       <a href="#apropos" data-i18n="nav.about">À propos</a>
       <a href="carrieres.html" data-i18n="nav.careers">Carrières</a>
       <a href="#contact" data-i18n="nav.contact">Contact</a>

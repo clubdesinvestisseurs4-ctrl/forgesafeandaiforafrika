@@ -42,121 +42,20 @@
   }
 
   /* ---------- Scroll reveal (GSAP if available, IO fallback) ---------- */
-  const gridSelector = ".services-grid, .demos-grid";
-  const revealEls = Array.from(document.querySelectorAll(".reveal")).filter(
-    (el) => !el.closest(gridSelector)
-  );
+  // Une seule animation, sobre : chaque bloc .reveal monte légèrement en fondu à l'entrée dans
+  // l'écran ; les cartes d'une même grille arrivent en léger décalage.
+  const revealEls = Array.from(document.querySelectorAll(".reveal"));
   if (!prefersReducedMotion && hasGSAP && window.ScrollTrigger) {
-    revealEls.forEach((el) => {
-      gsap.fromTo(
-        el,
-        { opacity: 0, y: 28 },
-        {
-          opacity: 1,
-          y: 0,
-          duration: 0.8,
-          ease: "power3.out",
-          scrollTrigger: { trigger: el, start: "top 88%" },
-        }
-      );
-    });
-
-    /* Services: cards alternate in from left/right with a slight tilt */
-    const servicesGrid = document.querySelector(".services-grid");
-    if (servicesGrid) {
-      Array.from(servicesGrid.children).forEach((card, i) => {
-        const fromLeft = i % 2 === 0;
+    ScrollTrigger.batch(revealEls, {
+      start: "top 90%",
+      once: true,
+      onEnter: (batch) =>
         gsap.fromTo(
-          card,
-          { opacity: 0, x: fromLeft ? -50 : 50, rotation: fromLeft ? -3 : 3 },
-          {
-            opacity: 1,
-            x: 0,
-            rotation: 0,
-            duration: 0.75,
-            delay: i * 0.12,
-            ease: "power3.out",
-            scrollTrigger: { trigger: servicesGrid, start: "top 85%" },
-          }
-        );
-      });
-    }
-
-    /* Demos: cards flip up into place, like a screen powering on */
-    const demosGrid = document.querySelector(".demos-grid");
-    if (demosGrid) {
-      gsap.fromTo(
-        demosGrid.children,
-        { opacity: 0, y: 60, rotationX: -35, transformPerspective: 800, transformOrigin: "top center" },
-        {
-          opacity: 1,
-          y: 0,
-          rotationX: 0,
-          duration: 0.85,
-          stagger: 0.14,
-          ease: "power3.out",
-          scrollTrigger: { trigger: demosGrid, start: "top 85%" },
-        }
-      );
-    }
-
-    /* About: copy slides in from the left, orbit visual spins into place */
-    const aboutInner = document.querySelector(".about-inner");
-    if (aboutInner) {
-      gsap.fromTo(
-        ".about-text > *",
-        { opacity: 0, x: -40 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.8,
-          stagger: 0.1,
-          ease: "power3.out",
-          scrollTrigger: { trigger: aboutInner, start: "top 80%" },
-        }
-      );
-      gsap.fromTo(
-        ".orbit-card",
-        { opacity: 0, scale: 0.7, rotation: -30 },
-        {
-          opacity: 1,
-          scale: 1,
-          rotation: 0,
-          duration: 1,
-          ease: "power3.out",
-          scrollTrigger: { trigger: aboutInner, start: "top 80%" },
-        }
-      );
-    }
-
-    /* Contact: info slides from the left, the form slides from the right */
-    const contactInner = document.querySelector(".contact-inner");
-    if (contactInner) {
-      gsap.fromTo(
-        ".contact-info li",
-        { opacity: 0, x: -30 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.7,
-          stagger: 0.1,
-          ease: "power3.out",
-          scrollTrigger: { trigger: contactInner, start: "top 82%" },
-        }
-      );
-      gsap.fromTo(
-        ".contact-form .form-row, .contact-form .btn-block",
-        { opacity: 0, x: 30 },
-        {
-          opacity: 1,
-          x: 0,
-          duration: 0.6,
-          stagger: 0.08,
-          ease: "power3.out",
-          scrollTrigger: { trigger: contactInner, start: "top 82%" },
-        }
-      );
-    }
+          batch,
+          { opacity: 0, y: 24 },
+          { opacity: 1, y: 0, duration: 0.7, stagger: 0.08, ease: "power3.out", overwrite: true }
+        ),
+    });
   } else if ("IntersectionObserver" in window) {
     const revealObserver = new IntersectionObserver(
       (entries, observer) => {
@@ -211,6 +110,7 @@
   document.querySelectorAll(".demo-media").forEach((media) => {
     const playBtn = media.querySelector(".play-btn");
     const videoSrc = media.dataset.videoSrc;
+    if (!playBtn) return;
 
     if (!videoSrc) {
       playBtn.addEventListener("click", () => {
@@ -324,35 +224,8 @@
   /* ---------- Footer year ---------- */
   document.getElementById("year").textContent = new Date().getFullYear();
 
-  /* ---------- Custom cursor (fine pointer only) ---------- */
+  // Curseur personnalisé retiré à la refonte : le curseur du système reste plus lisible.
   const isFinePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
-  if (isFinePointer && !prefersReducedMotion) {
-    const cursorDot = document.getElementById("cursorDot");
-    const cursorRing = document.getElementById("cursorRing");
-    let mx = 0, my = 0, rx = 0, ry = 0;
-
-    window.addEventListener("mousemove", (e) => {
-      mx = e.clientX;
-      my = e.clientY;
-      document.documentElement.classList.add("has-custom-cursor");
-      cursorDot.style.opacity = "1";
-      cursorRing.style.opacity = "1";
-      cursorDot.style.transform = `translate(${mx}px, ${my}px) translate(-50%, -50%)`;
-    }, { passive: true });
-
-    const tick = () => {
-      rx += (mx - rx) * 0.18;
-      ry += (my - ry) * 0.18;
-      cursorRing.style.transform = `translate(${rx}px, ${ry}px) translate(-50%, -50%)`;
-      requestAnimationFrame(tick);
-    };
-    requestAnimationFrame(tick);
-
-    document.querySelectorAll("a, button, .spotlight").forEach((el) => {
-      el.addEventListener("mouseenter", () => cursorRing.classList.add("is-active"));
-      el.addEventListener("mouseleave", () => cursorRing.classList.remove("is-active"));
-    });
-  }
 
   /* ---------- Magnetic buttons ---------- */
   if (isFinePointer && !prefersReducedMotion) {
