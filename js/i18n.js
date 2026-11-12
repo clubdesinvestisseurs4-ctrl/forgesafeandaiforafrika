@@ -106,6 +106,9 @@
       "contact.form.fallback": "L'envoi automatique n'a pas abouti : votre messagerie s'ouvre avec la demande pré-remplie, il vous suffit de l'envoyer.",
 
       "footer.rights": "Tous droits réservés.",
+      "footer.registered": "Immatriculée en Angleterre et au pays de Galles, n°",
+      "footer.privacy": "Politique de confidentialité",
+      "footer.privacy.href": "/confidentialite",
 
       "careers.meta.title": "Carrières — ForgeSafe Security & Digital Solutions",
       "careers.meta.description": "Rejoignez ForgeSafe Security & Digital Solutions. Découvrez notre culture, notre façon de recruter, et envoyez-nous une candidature spontanée.",
@@ -245,6 +248,9 @@
       "contact.form.fallback": "Automatic sending didn't go through: your email app is opening with the request pre-filled, just hit send.",
 
       "footer.rights": "All rights reserved.",
+      "footer.registered": "Registered in England and Wales, company no.",
+      "footer.privacy": "Privacy Policy",
+      "footer.privacy.href": "/privacy",
 
       "careers.meta.title": "Careers — ForgeSafe Security & Digital Solutions",
       "careers.meta.description": "Join ForgeSafe Security & Digital Solutions. Learn about our culture, how we hire, and send us a spontaneous application.",
@@ -329,9 +335,27 @@
     }
   };
 
+  // Pages écrites dans une seule langue (politique de confidentialité : /privacy en anglais,
+  // /confidentialite en français) : <html data-page-lang="en" data-alt-href="/confidentialite">.
+  // La langue y est imposée, et le bouton de l'autre langue ouvre la page traduite.
+  const pageLang = document.documentElement.dataset.pageLang;
+  const altHref = document.documentElement.dataset.altHref;
+
   document.querySelectorAll(".lang-btn").forEach((btn) => {
-    btn.addEventListener("click", () => setLang(btn.dataset.lang, true));
+    btn.addEventListener("click", () => {
+      if (pageLang && btn.dataset.lang !== pageLang && altHref) {
+        try { localStorage.setItem(STORAGE_KEY, btn.dataset.lang); } catch (e) {}
+        window.location.href = altHref;
+        return;
+      }
+      setLang(btn.dataset.lang, true);
+    });
   });
+
+  if (pageLang) {
+    applyLang(pageLang);
+    return;
+  }
 
   let saved = null;
   try { saved = localStorage.getItem(STORAGE_KEY); } catch (e) {}
